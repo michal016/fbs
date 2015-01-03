@@ -22,9 +22,9 @@ public class CharacterMove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow) == true)
         {
-            if (pos.x > -8f)
+            if (pos.x > -9f)
             {
-                scale.x = -1;
+                scale.x = -0.5f;
                 pos.x -= inSpeed;
                 animator.SetInteger("state", 1);
             }
@@ -34,7 +34,7 @@ public class CharacterMove : MonoBehaviour
         {
             if (pos.x < 6.8f)
             {
-                scale.x = 1;
+                scale.x = 0.5f;
                 pos.x += inSpeed;
                 animator.SetInteger("state", 1);
             }
