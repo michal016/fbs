@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: cce68e57a98ddd54f99e0a1c8cb97cb9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: chlopek_0
+    21300002: chlopek_1
+    21300004: chlopek_2
+    21300006: chlopek_3
+    21300008: chlopek_4
+    21300010: chlopek_5
+    21300012: chlopek_6
+    21300014: chlopek_7
+    21300016: chlopek_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: chlopek_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 172
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 163
+        width: 107
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 163
+        width: 79
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 163
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 22
+        width: 88
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 22
+        width: 110
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 25
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 95
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chlopek_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 22
+        width: 85
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
