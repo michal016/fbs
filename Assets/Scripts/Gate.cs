@@ -3,8 +3,6 @@ using System.Collections;
 
 public class Gate : MonoBehaviour {
 
-    private bool opened = false;
-
 	// Use this for initialization
 	void Start () {
 	

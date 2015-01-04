@@ -85,12 +85,27 @@ public class Sight : MonoBehaviour
 
     void Throw(int time)
     {
+        float torque = -4.0f;
+        Vector2 force = transform.right;
         Vector3 pos = transform.position;
         pos.y += 0.3f;
 
-        GameObject newBullet = Instantiate(inBulletPrefab, pos, transform.rotation) as GameObject;
+
+        CharacterMove characterMove = this.GetComponentInParent<CharacterMove>();
+
+        Quaternion rotation = transform.rotation;
+
+        // If character turned left
+        if (characterMove.transform.localScale.x < 0)
+        {
+            rotation = Quaternion.AngleAxis(180.0f, Vector3.up) * rotation;
+            force.x = -force.x;
+        }
+
+        GameObject newBullet = Instantiate(inBulletPrefab, pos, rotation) as GameObject;
         Rigidbody2D bulletRB = newBullet.GetComponent<Rigidbody2D>();
-        bulletRB.AddForce(transform.right * inBulletForce * time);
-        bulletRB.AddTorque(-4.0f);
+
+        bulletRB.AddTorque(torque);
+        bulletRB.AddForce(force * inBulletForce * time);
     }
 }
