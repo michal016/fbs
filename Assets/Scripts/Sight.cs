@@ -5,7 +5,7 @@ public class Sight : MonoBehaviour
 {
     public GameObject inBulletPrefab;
     public GameObject inStrengthIndicator;
-    public float inBulletForce = 35.0f;
+    public float inBulletForce = 20.0f;
 
     private bool isActive = false;
     private bool thrownig = false;
@@ -57,7 +57,7 @@ public class Sight : MonoBehaviour
             if (thrownig)
             {
                 forceTime++;
-                inStrengthIndicator.transform.localScale = new Vector3(forceTime / 21f, 1f, 1f);
+                inStrengthIndicator.transform.localScale = new Vector3(forceTime / 41f, 1f, 1f);
             }
 
 
@@ -73,7 +73,7 @@ public class Sight : MonoBehaviour
 
             }
 
-            if (forceTime > 20)
+            if (forceTime > 40)
             {
                 Throw(forceTime);
                 forceTime = 0;
