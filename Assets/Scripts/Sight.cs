@@ -7,71 +7,80 @@ public class Sight : MonoBehaviour
     public GameObject inStrengthIndicator;
     public float inBulletForce = 35.0f;
 
+    private bool isActive = false;
     private bool thrownig = false;
     private int forceTime = 0;
+
+    public void setActive(bool active)
+    {
+        isActive = active;
+
+        renderer.enabled = active;
+    }
 
     // Use this for initialization
     void Start()
     {
         inStrengthIndicator.renderer.enabled = false;
+        renderer.enabled = isActive;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow) == true)
+        if (isActive)
         {
-            //if (transform.rotation.z < 0.45f)
+            if (Input.GetKey(KeyCode.UpArrow) == true)
             {
-                transform.Rotate(new Vector3(0, 0, 1f));
+                //if (transform.rotation.z < 0.45f)
+                {
+                    transform.Rotate(new Vector3(0, 0, 1f));
+                }
             }
-        }
 
-        if (Input.GetKey(KeyCode.DownArrow) == true)
-        {
-            //if (transform.rotation.z > 0.0f)
+            if (Input.GetKey(KeyCode.DownArrow) == true)
             {
-                transform.Rotate(new Vector3(0, 0, -1f));
+                //if (transform.rotation.z > 0.0f)
+                {
+                    transform.Rotate(new Vector3(0, 0, -1f));
+                }
             }
-        }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) == true)
-        {
-            thrownig = true;
-            inStrengthIndicator.renderer.enabled = true;
-            inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
-        }
+            if (Input.GetKeyDown(KeyCode.Space) == true)
+            {
+                thrownig = true;
+                inStrengthIndicator.renderer.enabled = true;
+                inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
+            }
 
-        if (thrownig)
-        {
-            forceTime++;
-            inStrengthIndicator.transform.localScale = new Vector3(forceTime/21f, 1f, 1f);
-        }
+            if (thrownig)
+            {
+                forceTime++;
+                inStrengthIndicator.transform.localScale = new Vector3(forceTime / 21f, 1f, 1f);
+            }
 
 
-        if (thrownig && Input.GetKeyUp(KeyCode.Space) == true)
-        {
-            if (forceTime > 0)
+            if (thrownig && Input.GetKeyUp(KeyCode.Space) == true)
+            {
+                if (forceTime > 0)
+                {
+                    Throw(forceTime);
+                    forceTime = 0;
+                    thrownig = false;
+                    inStrengthIndicator.renderer.enabled = false;
+                }
+
+            }
+
+            if (forceTime > 20)
             {
                 Throw(forceTime);
                 forceTime = 0;
                 thrownig = false;
                 inStrengthIndicator.renderer.enabled = false;
-                //inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
             }
-
         }
-
-        if (forceTime > 20)
-        {
-            Throw(forceTime);
-            forceTime = 0;
-            thrownig = false;
-            inStrengthIndicator.renderer.enabled = false;
-            //inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
-        }
-
     }
 
     void Throw(int time)
