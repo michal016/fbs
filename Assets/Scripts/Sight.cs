@@ -90,9 +90,7 @@ public class Sight : MonoBehaviour
         Vector3 pos = transform.position;
         pos.y += 0.3f;
 
-
         CharacterMove characterMove = this.GetComponentInParent<CharacterMove>();
-
         Quaternion rotation = transform.rotation;
 
         // If character turned left
@@ -107,5 +105,9 @@ public class Sight : MonoBehaviour
 
         bulletRB.AddTorque(torque);
         bulletRB.AddForce(force * inBulletForce * time);
+
+        // End user turn
+        TurnManager turnManager = this.GetComponentInParent<TurnManager>();
+        turnManager.setTurn(1);
     }
 }

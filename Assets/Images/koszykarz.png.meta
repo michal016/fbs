@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: 0a195a01dfe99e8478dd9d2820a2b370
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: koszykarz_0
+    21300002: koszykarz_1
+    21300004: koszykarz_2
+    21300006: koszykarz_3
+    21300008: koszykarz_11
+    21300010: koszykarz_5
+    21300012: koszykarz_6
+    21300014: koszykarz_4
+    21300016: koszykarz_8
+    21300018: koszykarz_9
+    21300020: koszykarz_10
+    21300022: koszykarz_12
+    21300024: koszykarz_13
+    21300026: koszykarz_14
+    21300028: koszykarz_15
+    21300030: koszykarz_16
+    21300032: koszykarz_17
+    21300034: koszykarz_18
+    21300036: koszykarz_19
+    21300038: koszykarz_20
+    21300040: koszykarz_21
+    21300042: koszykarz_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: koszykarz_0
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 634
+        width: 111
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 672
+        width: 138
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_2
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 650
+        width: 95
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_3
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 653
+        width: 129
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_11
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 416
+        width: 138
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_5
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 648
+        width: 95
+        height: 171
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_6
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 654
+        width: 78
+        height: 175
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_4
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 656
+        width: 150
+        height: 175
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 10, w: 0}
+    - name: koszykarz_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 332
+        width: 160
+        height: 305
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 373
+        width: 100
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_10
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 391
+        width: 127
+        height: 181
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_12
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 436
+        width: 143
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_13
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 399
+        width: 90
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_14
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 398
+        width: 103
+        height: 168
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_15
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 413
+        width: 122
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 105
+        width: 73
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 105
+        width: 67
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_18
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 118
+        width: 72
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_19
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 130
+        width: 55
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_20
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 150
+        width: 62
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_21
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 163
+        width: 88
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: koszykarz_22
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 127
+        width: 87
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

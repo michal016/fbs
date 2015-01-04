@@ -9,71 +9,50 @@ public class CharacterManager : MonoBehaviour {
 
     public GameObject[] inCharacters;
 
+    private bool isActive = true;
     private int selected = 0;
+
+    public void setActive(bool active)
+    {
+        isActive = active;
+
+        if (!active)
+        {
+            hideAllArrows();
+        }
+        else
+        {
+            showArrow(selected);
+        }
+    }
 
 	// Use this for initialization
 	void Start () {
 
-        // Hide all arrows
-        foreach (GameObject character in inCharacters)
-        {
-            GameObject arrow = character.transform.Find("arrow").gameObject;
-            arrow.renderer.enabled = false;
-        }
-
-        // Show arrow over first character
+        // Show arrow only over first character
+        hideAllArrows();
         showArrow(selected);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        //// Move selected character left
-        //if (Input.GetKey(KeyCode.LeftArrow) == true)
-        //{
-        //    Vector3 pos = inCharacters[selected].transform.localPosition;
-        //    Vector3 scale = inCharacters[selected].transform.localScale;
-            
-        //    scale.x = -1f;
-        //    pos.x -= inSpeed;
-        //    animator.SetInteger("state", 1);
-
-        //    inCharacters[selected].transform.localPosition = pos;
-        //    inCharacters[selected].transform.localScale = scale;
-        //}
-
-        //// Move selected character right
-        //if (Input.GetKey(KeyCode.RightArrow) == true)
-        //{
-        //    Vector3 pos = inCharacters[selected].transform.localPosition;
-        //    Vector3 scale = inCharacters[selected].transform.localScale;
-
-        //    scale.x = 1f;
-        //    pos.x += inSpeed;
-        //    animator.SetInteger("state", 1);
-
-        //    inCharacters[selected].transform.localPosition = pos;
-        //    inCharacters[selected].transform.localScale = scale;
-        //}
-
-        //// Finish move animation
-        //if (Input.GetKeyUp(KeyCode.RightArrow) == true || Input.GetKeyUp(KeyCode.LeftArrow) == true)
-        //{
-        //    animator.SetInteger("state", 0);
-        //}
-
-        // Change selected character
-        if (Input.GetKeyDown(KeyCode.Tab) == true)
+        if (isActive)
         {
-            // Stop animation
-            animator.SetInteger("state", 0);
 
-            hideArrow(selected);
-            if (++selected > inCharacters.Length - 1)
+            // Change selected character
+            if (Input.GetKeyDown(KeyCode.Tab) == true)
             {
-                selected = 0;
+                // Stop animation
+                animator.SetInteger("state", 0);
+
+                hideArrow(selected);
+                if (++selected > inCharacters.Length - 1)
+                {
+                    selected = 0;
+                }
+                showArrow(selected);
             }
-            showArrow(selected);
         }
 	}
 
@@ -111,5 +90,14 @@ public class CharacterManager : MonoBehaviour {
         Transform selectedSightTransform = inCharacters[selected].transform.Find("sight");
         Sight selectedSight = (Sight)selectedSightTransform.GetComponent("Sight");
         selectedSight.setActive(false);
+    }
+
+    void hideAllArrows()
+    {
+        // Hide all arrows
+        for (int i = 0; i < inCharacters.Length; i++)
+        {
+            hideArrow(i);
+        }
     }
 }
