@@ -1,22 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterThrow : MonoBehaviour
+public class Sight : MonoBehaviour
 {
     public GameObject inBulletPrefab;
-    public float inBulletForce = 5.0f;
+    public float inBulletForce = 35.0f;
 
     private bool thrownig = false;
     private int forceTime = 0;
 
-    // Use this for initialization
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.UpArrow) == true)
+        {
+            //if (transform.rotation.z < 0.45f)
+            {
+                transform.Rotate(new Vector3(0, 0, 1f));
+            }
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) == true)
+        {
+            //if (transform.rotation.z > 0.0f)
+            {
+                transform.Rotate(new Vector3(0, 0, -1f));
+            }
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
             thrownig = true;
@@ -36,7 +48,7 @@ public class CharacterThrow : MonoBehaviour
                 forceTime = 0;
                 thrownig = false;
             }
-            
+
         }
 
         if (forceTime > 20)
@@ -46,17 +58,16 @@ public class CharacterThrow : MonoBehaviour
             thrownig = false;
         }
 
-
     }
 
     void Throw(int time)
     {
-        Vector3 force = new Vector3(5f, 5f, 0f);
         Vector3 pos = transform.position;
-        pos.y += 0.2f;
+        pos.y += 0.3f;
 
         GameObject newBullet = Instantiate(inBulletPrefab, pos, transform.rotation) as GameObject;
         Rigidbody2D bulletRB = newBullet.GetComponent<Rigidbody2D>();
-        bulletRB.AddForce(force * inBulletForce * time);
+        bulletRB.AddForce(transform.right * inBulletForce * time);
+        bulletRB.AddTorque(-4.0f);
     }
 }
