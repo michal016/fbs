@@ -4,6 +4,7 @@ using System.Collections;
 public class Sight : MonoBehaviour
 {
     public GameObject inBulletPrefab;
+    public GameObject inStrengthIndicator;
     public float inBulletForce = 35.0f;
 
     private bool thrownig = false;
@@ -32,11 +33,13 @@ public class Sight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
             thrownig = true;
+            inStrengthIndicator.transform.localScale = new Vector3(1f, 1f, 1f);
         }
 
         if (thrownig)
         {
             forceTime++;
+            inStrengthIndicator.transform.localScale = new Vector3(forceTime/21f, 1f, 1f);
         }
 
 
@@ -47,6 +50,7 @@ public class Sight : MonoBehaviour
                 Throw(forceTime);
                 forceTime = 0;
                 thrownig = false;
+                inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
             }
 
         }
@@ -56,6 +60,7 @@ public class Sight : MonoBehaviour
             Throw(forceTime);
             forceTime = 0;
             thrownig = false;
+            inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
         }
 
     }
