@@ -10,6 +10,12 @@ public class Sight : MonoBehaviour
     private bool thrownig = false;
     private int forceTime = 0;
 
+    // Use this for initialization
+    void Start()
+    {
+        inStrengthIndicator.renderer.enabled = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +39,8 @@ public class Sight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
             thrownig = true;
-            inStrengthIndicator.transform.localScale = new Vector3(1f, 1f, 1f);
+            inStrengthIndicator.renderer.enabled = true;
+            inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
         }
 
         if (thrownig)
@@ -50,7 +57,8 @@ public class Sight : MonoBehaviour
                 Throw(forceTime);
                 forceTime = 0;
                 thrownig = false;
-                inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
+                inStrengthIndicator.renderer.enabled = false;
+                //inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
             }
 
         }
@@ -60,7 +68,8 @@ public class Sight : MonoBehaviour
             Throw(forceTime);
             forceTime = 0;
             thrownig = false;
-            inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
+            inStrengthIndicator.renderer.enabled = false;
+            //inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
         }
 
     }
