@@ -4,27 +4,42 @@ using System.Collections;
 public class TurnManager : MonoBehaviour {
 
     // 0 - player, 1 - computer
-    private int turn = 0;
+    //private int turn = 0;
 
     public void setTurn(int t)
     {
-        turn = t;
+        //turn = t;
 
-        CharacterManager characterManager = GetComponentInChildren<CharacterManager>();
 
         if (t == 0)
         {
-            // player turn
-            characterManager.setActive(true);
+            Invoke("startPlayerTurn", 2.0f);
         }
         else
         {
-            // computer turn
-            characterManager.setActive(false);
-
-            EnemyMove enemyMove = GetComponentInChildren<EnemyMove>();
-            enemyMove.move();
+            Invoke("startComputerTurn", 2.0f);
         }
+    }
+
+    private void startPlayerTurn()
+    {
+        CharacterManager characterManager = FindObjectOfType<CharacterManager>();
+        characterManager.setActive(true);
+    }
+
+    private void startComputerTurn()
+    {
+        CharacterManager characterManager = FindObjectOfType<CharacterManager>();
+        characterManager.setActive(false);
+
+        EnemyMove enemyMove = GetComponentInChildren<EnemyMove>();
+        enemyMove.move();
+    }
+
+    private void pause()
+    {
+        CharacterManager characterManager = FindObjectOfType<CharacterManager>();
+        characterManager.setActive(false);
     }
     
     

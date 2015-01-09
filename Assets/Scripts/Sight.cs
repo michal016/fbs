@@ -10,6 +10,7 @@ public class Sight : MonoBehaviour
     private bool isActive = false;
     private bool thrownig = false;
     private int forceTime = 0;
+    private Animator animator;
 
     public void setActive(bool active)
     {
@@ -23,6 +24,7 @@ public class Sight : MonoBehaviour
     {
         inStrengthIndicator.renderer.enabled = false;
         renderer.enabled = isActive;
+        animator = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
@@ -49,6 +51,9 @@ public class Sight : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) == true)
             {
+                // Start begin to shot animation
+                animator.SetInteger("state", 2);
+
                 thrownig = true;
                 inStrengthIndicator.renderer.enabled = true;
                 inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
@@ -85,6 +90,9 @@ public class Sight : MonoBehaviour
 
     void Throw(int time)
     {
+        // Start shot animation
+        animator.SetInteger("state", 3);
+        
         float torque = -0.6f;
         Vector2 force = transform.right;
         Vector3 pos = transform.position;
@@ -100,14 +108,11 @@ public class Sight : MonoBehaviour
             force.x = -force.x;
         }
 
+        // Create new bullet
         GameObject newBullet = Instantiate(inBulletPrefab, pos, rotation) as GameObject;
         Rigidbody2D bulletRB = newBullet.GetComponent<Rigidbody2D>();
 
         bulletRB.AddTorque(torque);
         bulletRB.AddForce(force * inBulletForce * time);
-
-        // End user turn
-        TurnManager turnManager = this.GetComponentInParent<TurnManager>();
-        turnManager.setTurn(1);
     }
 }

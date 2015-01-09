@@ -10,7 +10,10 @@ public class Wheel : MonoBehaviour {
     {
         if (collision.gameObject.tag == "bullet")
         {
-            openingGate = true;
+            if (collision.collider.GetComponent<Bullet>().getActive())
+            {
+                openingGate = true;
+            }
         }
     }
 	
