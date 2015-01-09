@@ -17,6 +17,7 @@ public class CharacterMove : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        rigidbody2D.centerOfMass = new Vector2(0, -0.5f);
         animator = gameObject.GetComponent<Animator>();
     }
 
@@ -32,7 +33,7 @@ public class CharacterMove : MonoBehaviour
             {
                 //if (pos.x > -9f)
                 {
-                    scale.x = -1f;
+                    scale.x = -2f;
                     pos.x -= inSpeed;
                     animator.SetInteger("state", 1);
                 }
@@ -42,7 +43,7 @@ public class CharacterMove : MonoBehaviour
             {
                 //if (pos.x < 6.8f)
                 {
-                    scale.x = 1f;
+                    scale.x = 2f;
                     pos.x += inSpeed;
                     animator.SetInteger("state", 1);
                 }

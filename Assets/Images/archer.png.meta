@@ -1,0 +1,1070 @@
+fileFormatVersion: 2
+guid: 4c9d0a4ef4c88924a9d270cb5ee9a681
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: archer_0
+    21300002: archer_1
+    21300004: archer_2
+    21300006: archer_3
+    21300008: archer_4
+    21300010: archer_5
+    21300012: archer_6
+    21300014: archer_7
+    21300016: archer_8
+    21300018: archer_9
+    21300020: archer_10
+    21300022: archer_11
+    21300024: archer_12
+    21300026: archer_13
+    21300028: archer_14
+    21300030: archer_15
+    21300032: archer_16
+    21300034: archer_17
+    21300036: archer_18
+    21300038: archer_19
+    21300040: archer_20
+    21300042: archer_21
+    21300044: archer_22
+    21300046: archer_23
+    21300048: archer_24
+    21300050: archer_25
+    21300052: archer_26
+    21300054: archer_27
+    21300056: archer_28
+    21300058: archer_29
+    21300060: archer_30
+    21300062: archer_31
+    21300064: archer_32
+    21300066: archer_33
+    21300068: archer_34
+    21300070: archer_35
+    21300072: archer_36
+    21300074: archer_37
+    21300076: archer_38
+    21300078: archer_39
+    21300080: archer_40
+    21300082: archer_41
+    21300084: archer_42
+    21300086: archer_43
+    21300088: archer_44
+    21300090: archer_45
+    21300092: archer_46
+    21300094: archer_47
+    21300096: archer_48
+    21300098: archer_49
+    21300100: archer_50
+    21300102: archer_51
+    21300104: archer_52
+    21300106: archer_53
+    21300108: archer_54
+    21300110: archer_55
+    21300112: archer_56
+    21300114: archer_57
+    21300116: archer_58
+    21300118: archer_59
+    21300120: archer_60
+    21300122: archer_61
+    21300124: archer_62
+    21300126: archer_63
+    21300128: archer_64
+    21300130: archer_65
+    21300132: archer_66
+    21300134: archer_67
+    21300136: archer_68
+    21300138: archer_69
+    21300140: archer_70
+    21300142: archer_71
+    21300144: archer_72
+    21300146: archer_73
+    21300148: archer_74
+    21300150: archer_75
+    21300152: archer_76
+    21300154: archer_77
+    21300156: archer_78
+    21300158: archer_79
+    21300160: archer_80
+    21300162: archer_81
+    21300164: archer_82
+    21300166: archer_83
+    21300168: archer_84
+    21300170: archer_85
+    21300172: archer_86
+    21300174: archer_87
+    21300176: archer_88
+    21300178: archer_89
+    21300180: archer_90
+    21300182: archer_91
+    21300184: archer_92
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: archer_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 759
+        width: 42
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 759
+        width: 42
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 759
+        width: 42
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_3
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 759
+        width: 42
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 759
+        width: 42
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_5
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 759
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_6
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 759
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_7
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 759
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_8
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 758
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_9
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 759
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_10
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 756
+        width: 42
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 652
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 652
+        width: 52
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_13
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 652
+        width: 48
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_14
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 652
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_15
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 652
+        width: 40
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 650
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 653
+        width: 49
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_18
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 653
+        width: 65
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_19
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 653
+        width: 71
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_20
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 653
+        width: 60
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_21
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 653
+        width: 35
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_22
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 652
+        width: 37
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_23
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 536
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_24
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 536
+        width: 49
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_25
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 536
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_26
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 536
+        width: 53
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_27
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 536
+        width: 37
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_28
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 535
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_29
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 520
+        width: 41
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_30
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 520
+        width: 33
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_31
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 520
+        width: 37
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_32
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 520
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_33
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 520
+        width: 45
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_34
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 519
+        width: 44
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_35
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 420
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_36
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 420
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_37
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 420
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_38
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 420
+        width: 41
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_39
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 420
+        width: 40
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_40
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 419
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_41
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 378
+        width: 50
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_42
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 378
+        width: 74
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_43
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 379
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_44
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 377
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_45
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 376
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_46
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 378
+        width: 39
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_47
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 283
+        width: 41
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_48
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 283
+        width: 43
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_49
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 284
+        width: 43
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_50
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 285
+        width: 38
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_51
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 285
+        width: 34
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_52
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 280
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_53
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 260
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_54
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 260
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_55
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 260
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_56
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 260
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_57
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 260
+        width: 45
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_58
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 260
+        width: 49
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_59
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 165
+        width: 31
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_60
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 166
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_61
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 167
+        width: 32
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_62
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 167
+        width: 36
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_63
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 167
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_64
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 166
+        width: 49
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_65
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 130
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_66
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 130
+        width: 83
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_67
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 130
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_68
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 130
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_69
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 130
+        width: 65
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_70
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 130
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_71
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 93
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_72
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 93
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_73
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 93
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_74
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 93
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_75
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 93
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_76
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 101
+        width: 7
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_77
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 105
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_78
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 108
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_79
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 113
+        width: 33
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_80
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 114
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_81
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 113
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_82
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 110
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_83
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 105
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_84
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 101
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_85
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_86
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 53
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_87
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 13
+        width: 68
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_88
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 13
+        width: 72
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_89
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 14
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_90
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 24
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_91
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 28
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: archer_92
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 22
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -85,7 +85,7 @@ public class Sight : MonoBehaviour
 
     void Throw(int time)
     {
-        float torque = -4.0f;
+        float torque = -0.6f;
         Vector2 force = transform.right;
         Vector3 pos = transform.position;
         pos.y += 0.3f;
