@@ -44,7 +44,7 @@ public class TurnManager : MonoBehaviour {
     {
         gameLock = true;
         lockUserMoves();
-        messageManager.youWinMsg();
+        messageManager.youWinMsg(turn);
     }
 
     public void gameOver()
