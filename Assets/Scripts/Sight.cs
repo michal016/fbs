@@ -4,7 +4,7 @@ using System.Collections;
 public class Sight : MonoBehaviour
 {
     public GameObject inBulletPrefab;
-    public GameObject inStrengthIndicator;
+    private GameObject strengthIndicator;
     public float inBulletForce = 20.0f;
 
     private bool isActive = false;
@@ -15,14 +15,14 @@ public class Sight : MonoBehaviour
     public void setActive(bool active)
     {
         isActive = active;
-
         renderer.enabled = active;
     }
 
     // Use this for initialization
     void Start()
     {
-        inStrengthIndicator.renderer.enabled = false;
+        strengthIndicator = transform.parent.transform.Find("strengthIndicator").gameObject;
+        strengthIndicator.renderer.enabled = false;
         renderer.enabled = isActive;
         animator = GetComponentInParent<Animator>();
     }
@@ -55,14 +55,14 @@ public class Sight : MonoBehaviour
                 animator.SetInteger("state", 2);
 
                 thrownig = true;
-                inStrengthIndicator.renderer.enabled = true;
-                inStrengthIndicator.transform.localScale = new Vector3(0f, 1f, 1f);
+                strengthIndicator.renderer.enabled = true;
+                strengthIndicator.transform.localScale = new Vector3(0f, 0.15f, 0.15f);
             }
 
             if (thrownig)
             {
                 forceTime++;
-                inStrengthIndicator.transform.localScale = new Vector3(forceTime / 41f, 1f, 1f);
+                strengthIndicator.transform.localScale = new Vector3(0.15f * forceTime / 41f, 0.15f, 0.15f);
             }
 
 
@@ -73,7 +73,7 @@ public class Sight : MonoBehaviour
                     Throw(forceTime);
                     forceTime = 0;
                     thrownig = false;
-                    inStrengthIndicator.renderer.enabled = false;
+                    strengthIndicator.renderer.enabled = false;
                 }
 
             }
@@ -83,7 +83,7 @@ public class Sight : MonoBehaviour
                 Throw(forceTime);
                 forceTime = 0;
                 thrownig = false;
-                inStrengthIndicator.renderer.enabled = false;
+                strengthIndicator.renderer.enabled = false;
             }
         }
     }
@@ -93,6 +93,10 @@ public class Sight : MonoBehaviour
         // Start shot animation
         animator.SetInteger("state", 3);
         
+        // Lock user's moves
+        TurnManager turnManager = FindObjectOfType<TurnManager>();
+        turnManager.pause();
+
         float torque = -0.6f;
         Vector2 force = transform.right;
         Vector3 pos = transform.position;
@@ -114,5 +118,7 @@ public class Sight : MonoBehaviour
 
         bulletRB.AddTorque(torque);
         bulletRB.AddForce(force * inBulletForce * time);
+
+
     }
 }

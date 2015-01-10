@@ -42,8 +42,8 @@ public class EnemyMove : MonoBehaviour {
 
 
                 // Start user turn
-                TurnManager turnManager = this.GetComponentInParent<TurnManager>();
-                turnManager.setTurn(0);
+                TurnManager turnManager = FindObjectOfType<TurnManager>();
+                turnManager.startPlayerTurn();
             }
         }
 	}

@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour {
             {
                 // End user turn
                 TurnManager turnManager = FindObjectOfType<TurnManager>();
-                turnManager.setTurn(1);
+                turnManager.startComputerTurn();
             }
         }
     }
