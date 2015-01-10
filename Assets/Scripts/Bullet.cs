@@ -25,8 +25,23 @@ public class Bullet : MonoBehaviour {
 
             if (collision.gameObject.tag == "wheel")
             {
+                // Player wins
                 Gate gate = FindObjectOfType<Gate>();
                 gate.open();
+                turnManager.playerWin();
+            }
+            else if (collision.gameObject.tag == "enemy")
+            {
+                // Enemy hit
+                Animator enemyAnimator = collision.collider.gameObject.GetComponent<Animator>();
+                enemyAnimator.SetInteger("state", 2);
+
+                collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(0.34f, 0.25f);
+
+                // Player wins
+                Gate gate = FindObjectOfType<Gate>();
+                gate.open();
+                turnManager.playerWin();
             }
             else
             {

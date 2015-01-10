@@ -44,6 +44,13 @@ public class TurnManager : MonoBehaviour {
         characterManager.setActive(false);
     }
 
+    public void playerWin()
+    {
+        gameLock = true;
+        lockUserMoves();
+        messageManager.youWinMsg();
+    }
+
     public void gameOver()
     {
         gameLock = true;

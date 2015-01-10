@@ -16,13 +16,13 @@ public class CharacterManager : MonoBehaviour {
     {
         isActive = active;
 
-        if (!active)
+        if (active)
         {
-            hideAllArrows();
+            showArrow(selected);
         }
         else
         {
-            showArrow(selected);
+            hideAllArrows();
         }
     }
 

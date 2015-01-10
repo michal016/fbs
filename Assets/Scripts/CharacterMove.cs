@@ -64,11 +64,7 @@ public class CharacterMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "castle")
-        {
-
-        }
-        else if (collision.gameObject.tag == "mainFloor")
+        if (collision.gameObject.tag == "mainFloor")
         {
             turnManager.gameOver();
         }
