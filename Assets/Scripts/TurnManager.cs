@@ -7,6 +7,7 @@ public class TurnManager : MonoBehaviour {
     private CharacterManager characterManager;
     private EnemyMove enemyMove;
     private bool gameLock = false;
+    private int turn = 0;
 
     void Start()
     {
@@ -29,14 +30,9 @@ public class TurnManager : MonoBehaviour {
     {
         if (!gameLock)
         {
-            Invoke("showComputerTurnMsg", 2.0f);
+            messageManager.enemyTurnMsg();
             Invoke("beginComputerTurn", 2.0f);
         }
-    }
-
-    private void showComputerTurnMsg()
-    {
-        messageManager.enemyTurnMsg();
     }
 
     public void lockUserMoves()
@@ -60,8 +56,9 @@ public class TurnManager : MonoBehaviour {
 
     private void beginPlayerTurn()
     {
+        turn++;
+        Debug.Log(turn);
         messageManager.playerTurnMsg();
-
         characterManager.setActive(true);
     }
 

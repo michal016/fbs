@@ -25,7 +25,7 @@ public class EnemyMove : MonoBehaviour {
             position.x += 0.01f;
             transform.position = position;
 
-            if (movementFrame < 120)
+            if (movementFrame < 100)
             {
                 movementFrame++;
             }
@@ -47,5 +47,14 @@ public class EnemyMove : MonoBehaviour {
     {
         animator.SetInteger("state", 1);
         movement = true;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "gameOver")
+        {
+            // Game over
+            turnManager.gameOver();
+        }
     }
 }
