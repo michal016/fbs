@@ -4,6 +4,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 
     private bool isActive = true;
+    private TurnManager turnManager;
 
     public bool getActive()
     {
@@ -11,7 +12,9 @@ public class Bullet : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
+    void Start()
+    {
+        turnManager = FindObjectOfType<TurnManager>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -28,7 +31,6 @@ public class Bullet : MonoBehaviour {
             else
             {
                 // End user turn
-                TurnManager turnManager = FindObjectOfType<TurnManager>();
                 turnManager.startComputerTurn();
             }
         }

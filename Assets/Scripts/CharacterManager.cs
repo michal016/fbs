@@ -9,7 +9,7 @@ public class CharacterManager : MonoBehaviour {
 
     public GameObject[] inCharacters;
 
-    private bool isActive = true;
+    private bool isActive = false;
     private int selected = 0;
 
     public void setActive(bool active)
@@ -31,7 +31,7 @@ public class CharacterManager : MonoBehaviour {
 
         // Show arrow only over first character
         hideAllArrows();
-        showArrow(selected);
+        //showArrow(selected);
 	}
 	
 	// Update is called once per frame

@@ -7,21 +7,17 @@ public class EnemyMove : MonoBehaviour {
 
     private bool movement = false;
     private int movementFrame = 0;
+    TurnManager turnManager;
 
 	// Use this for initialization
     void Start()
     {
+        turnManager = FindObjectOfType<TurnManager>();
         animator = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        //if (Input.GetKeyDown(KeyCode.A) == true)
-        //{
-        //    animator.SetInteger("state", 1);
-        //    movement = true;
-        //}
 
         if (movement)
         {
@@ -29,7 +25,7 @@ public class EnemyMove : MonoBehaviour {
             position.x += 0.01f;
             transform.position = position;
 
-            if (movementFrame < 100)
+            if (movementFrame < 120)
             {
                 movementFrame++;
             }
@@ -42,7 +38,6 @@ public class EnemyMove : MonoBehaviour {
 
 
                 // Start user turn
-                TurnManager turnManager = FindObjectOfType<TurnManager>();
                 turnManager.startPlayerTurn();
             }
         }

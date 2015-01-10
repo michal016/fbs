@@ -3,46 +3,63 @@ using System.Collections;
 
 public class TurnManager : MonoBehaviour {
 
+    private MessageManager messageManager;
+    private CharacterManager characterManager;
+    private EnemyMove enemyMove;
+    private bool gameLock = false;
+
+    void Start()
+    {
+        messageManager = FindObjectOfType<MessageManager>();
+        characterManager = FindObjectOfType<CharacterManager>();
+        enemyMove = FindObjectOfType<EnemyMove>();
+
+        Invoke("beginPlayerTurn", 2.0f);
+    }
+
     public void startPlayerTurn()
     {
-        Invoke("beginPlayerTurn", 2.0f);
+        if (!gameLock)
+        {
+            Invoke("beginPlayerTurn", 2.0f);
+        }
     }
 
     public void startComputerTurn()
     {
-        Invoke("beginComputerTurn", 2.0f);
+        if (!gameLock)
+        {
+            Invoke("showComputerTurnMsg", 2.0f);
+            Invoke("beginComputerTurn", 2.0f);
+        }
     }
 
-    public void pause()
+    private void showComputerTurnMsg()
     {
-        CharacterManager characterManager = FindObjectOfType<CharacterManager>();
+        messageManager.enemyTurnMsg();
+    }
+
+    public void lockUserMoves()
+    {
         characterManager.setActive(false);
+    }
+
+    public void gameOver()
+    {
+        gameLock = true;
+        lockUserMoves();
+        messageManager.youLostMsg();
     }
 
     private void beginPlayerTurn()
     {
-        CharacterManager characterManager = FindObjectOfType<CharacterManager>();
+        messageManager.playerTurnMsg();
+
         characterManager.setActive(true);
     }
 
     private void beginComputerTurn()
     {
-        EnemyMove enemyMove = FindObjectOfType<EnemyMove>();
         enemyMove.move();
     }
-    
-    
-    
-    
-    
-    
-    // Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

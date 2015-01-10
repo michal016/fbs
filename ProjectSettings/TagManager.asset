@@ -5,6 +5,9 @@ TagManager:
   tags:
   - bullet
   - wheel
+  - castle
+  - gameOver
+  - mainFloor
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -8,9 +8,12 @@ public class CharacterMove : MonoBehaviour
 
     public float inSpeed = 0.05f;
     private bool isActive = false;
+    private TurnManager turnManager;
+
 
     public void setActive(bool active)
     {
+        turnManager = FindObjectOfType<TurnManager>();
         isActive = active;
     }
 
@@ -57,5 +60,18 @@ public class CharacterMove : MonoBehaviour
             transform.localPosition = pos;
             transform.localScale = scale;
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "castle")
+        {
+
+        }
+        else if (collision.gameObject.tag == "mainFloor")
+        {
+            turnManager.gameOver();
+        }
+        
     }
 }

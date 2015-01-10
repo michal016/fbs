@@ -11,6 +11,8 @@ public class Sight : MonoBehaviour
     private bool thrownig = false;
     private int forceTime = 0;
     private Animator animator;
+    private TurnManager turnManager;
+    private CharacterMove characterMove;
 
     public void setActive(bool active)
     {
@@ -21,6 +23,8 @@ public class Sight : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        characterMove = this.GetComponentInParent<CharacterMove>();
+        turnManager = FindObjectOfType<TurnManager>();
         strengthIndicator = transform.parent.transform.Find("strengthIndicator").gameObject;
         strengthIndicator.renderer.enabled = false;
         renderer.enabled = isActive;
@@ -94,15 +98,13 @@ public class Sight : MonoBehaviour
         animator.SetInteger("state", 3);
         
         // Lock user's moves
-        TurnManager turnManager = FindObjectOfType<TurnManager>();
-        turnManager.pause();
+        turnManager.lockUserMoves();
 
         float torque = -0.6f;
         Vector2 force = transform.right;
         Vector3 pos = transform.position;
         pos.y += 0.3f;
 
-        CharacterMove characterMove = this.GetComponentInParent<CharacterMove>();
         Quaternion rotation = transform.rotation;
 
         // If character turned left
