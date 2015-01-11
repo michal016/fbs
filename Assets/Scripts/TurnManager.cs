@@ -3,6 +3,10 @@ using System.Collections;
 
 public class TurnManager : MonoBehaviour {
 
+    private AudioSource audioSource;
+    public AudioClip inWinSound;
+    public AudioClip inLoseSound;
+
     private MessageManager messageManager;
     private CharacterManager characterManager;
     private EnemyMove enemyMove;
@@ -11,6 +15,8 @@ public class TurnManager : MonoBehaviour {
 
     void Start()
     {
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         messageManager = FindObjectOfType<MessageManager>();
         characterManager = FindObjectOfType<CharacterManager>();
         enemyMove = FindObjectOfType<EnemyMove>();
@@ -42,6 +48,9 @@ public class TurnManager : MonoBehaviour {
 
     public void playerWin()
     {
+        audioSource.clip = inWinSound;
+        audioSource.Play();
+
         gameLock = true;
         lockUserMoves();
         messageManager.youWinMsg(turn);
@@ -49,6 +58,9 @@ public class TurnManager : MonoBehaviour {
 
     public void gameOver()
     {
+        audioSource.clip = inLoseSound;
+        audioSource.Play();
+
         gameLock = true;
         lockUserMoves();
         messageManager.youLostMsg();

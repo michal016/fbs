@@ -7,6 +7,7 @@ public class MessageManager : MonoBehaviour {
     private GameObject enemy_turn;
     private GameObject you_win;
     private GameObject you_lost;
+    private GameObject target;
 
     private GameObject star1;
     private GameObject star2;
@@ -25,6 +26,7 @@ public class MessageManager : MonoBehaviour {
         enemy_turn = transform.Find("enemy_turn").gameObject;
         you_win = transform.Find("you_win").gameObject;
         you_lost = transform.Find("you_lost").gameObject;
+        target = transform.Find("target").gameObject;
 
         star1 = transform.Find("star1").gameObject;
         star2 = transform.Find("star2").gameObject;
@@ -48,6 +50,13 @@ public class MessageManager : MonoBehaviour {
         star_whiteblack3.renderer.enabled = false;
 
         activeMessages = new ArrayList();
+
+        Invoke("hideTargetMsg", 2.0f);
+    }
+
+    public void hideTargetMsg()
+    {
+        target.renderer.enabled = false;
     }
 
     public void playerTurnMsg()
@@ -68,27 +77,34 @@ public class MessageManager : MonoBehaviour {
         showMessage(you_win);
         int stars = 4 - turn;
 
-
-        star_whiteblack1.renderer.enabled = true;
-        star_whiteblack2.renderer.enabled = true;
-        star_whiteblack3.renderer.enabled = true;
+        Invoke("showWhiteBlackStars", 1.0f);
 
         if (stars > 0)
         {
             // show the first star
-            Invoke("showStar1", 1.0f);
+            Invoke("showStar1", 2.0f);
+
+            //star1.renderer.enabled = true;
+
             if (stars > 1)
             {
                 // show ths second star
-                Invoke("showStar2", 1.5f);
+                Invoke("showStar2", 2.5f);
 
                 if (stars > 2)
                 {
                     // show the thir star
-                    Invoke("showStar3", 2.0f);
+                    Invoke("showStar3", 3.0f);
                 }
             }
         }
+    }
+
+    private void showWhiteBlackStars()
+    {
+        star_whiteblack1.renderer.enabled = true;
+        star_whiteblack2.renderer.enabled = true;
+        star_whiteblack3.renderer.enabled = true;
     }
 
     private void showStar1()
