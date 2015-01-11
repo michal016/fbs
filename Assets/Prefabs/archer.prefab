@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inBulletPrefab: {fileID: 100000, guid: 172e44a93ca2165459df2c119e765d41, type: 2}
-  inBulletForce: 10
+  inBulletForce: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

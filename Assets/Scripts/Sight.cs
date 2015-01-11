@@ -105,7 +105,7 @@ public class Sight : MonoBehaviour
         // Lock user's moves
         turnManager.lockUserMoves();
 
-        float torque = -0.6f;
+        float torque = -0.06f;
         Vector2 force = transform.right;
         Vector3 pos = transform.position;
         pos.y += 0.3f;
