@@ -3,7 +3,8 @@ using System.Collections;
 
 public class EnemyMove : MonoBehaviour {
 
-    Animator animator;
+    private Animator animator;
+    private AudioSource audioSource;
 
     private bool movement = false;
     private int movementFrame = 0;
@@ -12,6 +13,7 @@ public class EnemyMove : MonoBehaviour {
 	// Use this for initialization
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         turnManager = FindObjectOfType<TurnManager>();
         animator = gameObject.GetComponent<Animator>();
 	}
@@ -33,6 +35,7 @@ public class EnemyMove : MonoBehaviour {
             {
                 // End movement
                 animator.SetInteger("state", 0);
+                audioSource.Stop();
                 movementFrame = 0;
                 movement = false;
 
@@ -46,6 +49,7 @@ public class EnemyMove : MonoBehaviour {
     public void move()
     {
         animator.SetInteger("state", 1);
+        audioSource.Play();
         movement = true;
     }
 

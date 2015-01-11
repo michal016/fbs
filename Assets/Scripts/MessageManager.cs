@@ -64,6 +64,7 @@ public class MessageManager : MonoBehaviour {
 
     public void youWinMsg(int turn)
     {
+        HideAllMessages();
         showMessage(you_win);
         int stars = 4 - turn;
 
@@ -113,6 +114,7 @@ public class MessageManager : MonoBehaviour {
 
     private void showMessage(GameObject message)
     {
+        HideAllMessages();
         message.renderer.enabled = true;
         activeMessages.Add(message);
     }

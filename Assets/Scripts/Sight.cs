@@ -11,6 +11,7 @@ public class Sight : MonoBehaviour
     private bool thrownig = false;
     private int forceTime = 0;
     private Animator animator;
+    private AudioSource audioSource;
     private TurnManager turnManager;
     private CharacterMove characterMove;
 
@@ -29,6 +30,7 @@ public class Sight : MonoBehaviour
         strengthIndicator.renderer.enabled = false;
         renderer.enabled = isActive;
         animator = GetComponentInParent<Animator>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -96,7 +98,10 @@ public class Sight : MonoBehaviour
     {
         // Start shot animation
         animator.SetInteger("state", 3);
-        
+
+        // Play sound
+        audioSource.Play();
+
         // Lock user's moves
         turnManager.lockUserMoves();
 

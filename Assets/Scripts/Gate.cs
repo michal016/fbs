@@ -4,10 +4,11 @@ using System.Collections;
 public class Gate : MonoBehaviour {
 
     private bool openingGate = false;
+    private AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
-	
+        audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -21,6 +22,7 @@ public class Gate : MonoBehaviour {
             }
             else
             {
+                audioSource.Stop();
                 openingGate = false;
             }
         }
@@ -30,5 +32,6 @@ public class Gate : MonoBehaviour {
     public void open()
     {
         openingGate = true;
+        audioSource.Play();
     }
 }

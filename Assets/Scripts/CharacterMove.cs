@@ -4,7 +4,8 @@ using System.Collections;
 public class CharacterMove : MonoBehaviour
 {
 
-    Animator animator;
+    private Animator animator;
+    private AudioSource audioSource;
 
     public float inSpeed = 0.05f;
     private bool isActive = false;
@@ -22,6 +23,7 @@ public class CharacterMove : MonoBehaviour
     {
         rigidbody2D.centerOfMass = new Vector2(0, -0.5f);
         animator = gameObject.GetComponent<Animator>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,27 +36,38 @@ public class CharacterMove : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftArrow) == true)
             {
-                //if (pos.x > -9f)
+                // Play sound
+                if (!audioSource.isPlaying)
                 {
-                    scale.x = -2f;
-                    pos.x -= inSpeed;
-                    animator.SetInteger("state", 1);
+                    audioSource.Play();
                 }
+
+                // Start animation
+                animator.SetInteger("state", 1);
+
+                scale.x = -2f;
+                pos.x -= inSpeed;
             }
 
             if (Input.GetKey(KeyCode.RightArrow) == true)
             {
-                //if (pos.x < 6.8f)
+                // Play sound
+                if (!audioSource.isPlaying)
                 {
-                    scale.x = 2f;
-                    pos.x += inSpeed;
-                    animator.SetInteger("state", 1);
+                    audioSource.Play();
                 }
+
+                // Start animation
+                animator.SetInteger("state", 1);
+
+                scale.x = 2f;
+                pos.x += inSpeed;
             }
 
             if (Input.GetKeyUp(KeyCode.RightArrow) == true || Input.GetKeyUp(KeyCode.LeftArrow) == true)
             {
                 animator.SetInteger("state", 0);
+                audioSource.Stop();
             }
 
             transform.localPosition = pos;

@@ -57,7 +57,6 @@ public class TurnManager : MonoBehaviour {
     private void beginPlayerTurn()
     {
         turn++;
-        Debug.Log(turn);
         messageManager.playerTurnMsg();
         characterManager.setActive(true);
     }
