@@ -7,4 +7,9 @@ public class Menu : MonoBehaviour {
     {
         Application.LoadLevel("level_1");
     }
+
+    public void startLevel2()
+    {
+        Application.LoadLevel("level_2");
+    }
 }
