@@ -3,9 +3,10 @@ using System.Collections;
 
 public class TurnManager : MonoBehaviour {
 
-    private AudioSource audioSource;
     public AudioClip inWinSound;
     public AudioClip inLoseSound;
+    public int inLevel;
+    private AudioSource audioSource;
 
     private MessageManager messageManager;
     private CharacterManager characterManager;
@@ -54,6 +55,10 @@ public class TurnManager : MonoBehaviour {
         gameLock = true;
         lockUserMoves();
         messageManager.youWinMsg(turn);
+
+        GameState.setStars(inLevel, turn);
+
+        SaveLoad.Save();
     }
 
     public void gameOver()
