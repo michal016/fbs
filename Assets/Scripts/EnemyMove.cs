@@ -6,6 +6,7 @@ public class EnemyMove : MonoBehaviour {
     private Animator animator;
     private AudioSource audioSource;
 
+    public bool isAlive = true;
     private bool movement = false;
     private int movementFrame = 0;
     TurnManager turnManager;
@@ -24,7 +25,7 @@ public class EnemyMove : MonoBehaviour {
         if (movement)
         {
             Vector3 position = transform.position;
-            position.x += 0.01f;
+            position.x -= 0.01f;
             transform.position = position;
 
             if (movementFrame < 100)
@@ -46,19 +47,46 @@ public class EnemyMove : MonoBehaviour {
         }
 	}
 
-    public void move()
+    public void move(int turn)
     {
-        animator.SetInteger("state", 1);
-        audioSource.Play();
-        movement = true;
+
+        if (turn == 5)
+        {
+            Deck deck = (Deck)FindObjectOfType<Deck>();
+            if (deck)
+            {
+                deck.close();
+                turnManager.gameOver();
+            }
+        }
+
+        if (isAlive)
+        {
+            animator.SetInteger("state", 1);
+            audioSource.Play();
+            movement = true;
+        }
+        else
+        {
+            // Start user turn
+            turnManager.startPlayerTurn();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "gameOver")
         {
+            Deck deck = (Deck)FindObjectOfType<Deck>();
+            deck.close();
+
             // Game over
             turnManager.gameOver();
         }
+    }
+
+    public void kill()
+    {
+        this.isAlive = false;
     }
 }

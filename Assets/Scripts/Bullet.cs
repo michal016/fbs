@@ -61,10 +61,20 @@ public class Bullet : MonoBehaviour {
 
                 collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(0.34f, 0.25f);
 
-                // Player wins
-                Gate gate = FindObjectOfType<Gate>();
-                gate.open();
-                turnManager.playerWin();
+                // Enemy kill (stop moving)
+                EnemyMove enemyMove = (EnemyMove)collision.collider.gameObject.GetComponent<EnemyMove>();
+
+                if (enemyMove)
+                {
+                    enemyMove.kill();
+                }
+                //// Player wins
+                //Gate gate = FindObjectOfType<Gate>();
+                //gate.open();
+                //turnManager.playerWin();
+
+                // End user turn
+                turnManager.startComputerTurn();
             }
             else
             {

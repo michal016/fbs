@@ -13,6 +13,7 @@ public class TurnManager : MonoBehaviour {
     private EnemyMove enemyMove;
     private bool gameLock = false;
     private int turn = 0;
+    private bool levelCompleted = false;
 
     void Start()
     {
@@ -59,6 +60,7 @@ public class TurnManager : MonoBehaviour {
         GameState.setStars(inLevel, turn);
 
         SaveLoad.Save();
+        levelCompleted = true;
     }
 
     public void gameOver()
@@ -80,6 +82,17 @@ public class TurnManager : MonoBehaviour {
 
     private void beginComputerTurn()
     {
-        enemyMove.move();
+        enemyMove.move(turn);
+    }
+
+    void Update()
+    {
+        if (levelCompleted)
+        {
+            if (Input.GetKey(KeyCode.Space) == true)
+            {
+                Application.LoadLevel("menu");
+            }
+        }
     }
 }
