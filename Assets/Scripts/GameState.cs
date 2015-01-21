@@ -11,10 +11,8 @@ public class GameState
     public static int[] levelStars = {0,0,0};
     private int levels = 3;
 
-    public static void setStars(int level, int turn)
+    public static void setStars(int level, int stars)
     {
-        int stars = 4 - turn;
-        
         if (stars < 0)
         {
             stars = 0;

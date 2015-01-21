@@ -77,11 +77,10 @@ public class MessageManager : MonoBehaviour {
         }
     }
 
-    public void youWinMsg(int turn)
+    public void youWinMsg(int stars)
     {
         HideAllMessages();
         showMessage(you_win);
-        int stars = 4 - turn;
 
         Invoke("showWhiteBlackStars", 1.0f);
 

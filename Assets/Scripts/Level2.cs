@@ -36,21 +36,21 @@ public class Level2 : MonoBehaviour {
             position.x -= 0.02f;
             transform.position = position;
 
-            if (movementFrame < 100)
+            //if (movementFrame < 100)
             {
                 movementFrame++;
             }
-            else
-            {
-                // End movement
-                animator.SetInteger("state", 0);
-                audioSource.Stop();
-                movementFrame = 0;
-                movement = false;
+            //else
+            //{
+            //    // End movement
+            //    animator.SetInteger("state", 0);
+            //    audioSource.Stop();
+            //    movementFrame = 0;
+            //    movement = false;
 
-                // Start user turn
-                turnManager.startPlayerTurn();
-            }
+            //    // Start user turn
+            //    turnManager.startPlayerTurn();
+            //}
         }
 
         if (openingGate)
@@ -82,34 +82,34 @@ public class Level2 : MonoBehaviour {
 
         if (isAlive)
         {
-            if (turn < 3)
+            if (turn < 4)
             {
                 // Start user turn
                 turnManager.startPlayerTurn();
             }
 
-            if (turn == 3)
+            if (turn == 4)
             {
                 openingGate = true;
                 gate.open();
             }
 
-            if (turn == 4)
-            {
-                animator.SetInteger("state", 1);
-                audioSource.Play();
-                movement = true;
+            //if (turn == 5)
+            //{
+            //    animator.SetInteger("state", 1);
+            //    audioSource.Play();
+            //    movement = true;
 
-                closingGate = true;
-                gate.close();
-            }
+            //    closingGate = true;
+            //    gate.close();
+            //}
 
-            if (turn > 4)
-            {
-                animator.SetInteger("state", 1);
-                audioSource.Play();
-                movement = true;
-            }
+            //if (turn > 5)
+            //{
+            //    animator.SetInteger("state", 1);
+            //    audioSource.Play();
+            //    movement = true;
+            //}
         }
         else
         {

@@ -61,9 +61,11 @@ public class TurnManager : MonoBehaviour {
 
         gameLock = true;
         lockUserMoves();
-        messageManager.youWinMsg(turn);
 
-        GameState.setStars(inLevel - 1, turn);
+        int stars = calculateStars(inLevel, turn);
+        
+        messageManager.youWinMsg(stars);
+        GameState.setStars(inLevel - 1, stars);
 
         SaveLoad.Save();
         levelCompleted = true;
@@ -85,14 +87,20 @@ public class TurnManager : MonoBehaviour {
 
     private void beginPlayerTurn()
     {
-        turn++;
-        messageManager.playerTurnMsg();
-        characterManager.setActive(true);
+        if (!levelCompleted)
+        {
+            turn++;
+            messageManager.playerTurnMsg();
+            characterManager.setActive(true);
+        }
     }
 
     private void beginComputerTurn()
     {
-        levelManager.computerTurn(turn);
+        if (!levelCompleted)
+        {
+            levelManager.computerTurn(turn);
+        }
     }
 
     void Update()
@@ -104,5 +112,22 @@ public class TurnManager : MonoBehaviour {
                 Application.LoadLevel("menu");
             }
         }
+    }
+
+    private int calculateStars(int level, int turn)
+    {
+        if (level == 1)
+        {
+            return 4 - turn;
+        }
+        else if (level == 2)
+        {
+            return 5 - turn;
+        }
+        else if (level == 3)
+        {
+            return 6 - turn;
+        }
+        return 0;
     }
 }

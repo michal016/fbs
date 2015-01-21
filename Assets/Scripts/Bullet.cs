@@ -9,7 +9,6 @@ public class Bullet : MonoBehaviour {
 
     public AudioClip inDestroySound;
     public AudioClip inDeathSound;
-    public AudioClip inCastleHitSound;
 
     public bool getActive()
     {
@@ -72,18 +71,6 @@ public class Bullet : MonoBehaviour {
                 //Gate gate = FindObjectOfType<Gate>();
                 //gate.open();
                 //turnManager.playerWin();
-
-                // End user turn
-                turnManager.startComputerTurn();
-            }
-            else
-            {
-                if (collision.gameObject.tag == "castle")
-                {
-                    // Play castle_hit sound
-                    audioSource.clip = inCastleHitSound;
-                    audioSource.Play();
-                }
 
                 // End user turn
                 turnManager.startComputerTurn();

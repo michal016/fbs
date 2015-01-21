@@ -67,7 +67,7 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 68e471f760334e74099b5231e29f1df7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -130,7 +130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inDestroySound: {fileID: 8300000, guid: fdb037187cce19b409835a210215d579, type: 3}
   inDeathSound: {fileID: 8300000, guid: ad1d4fa7596743f48952e73bd5227de7, type: 3}
-  inCastleHitSound: {fileID: 8300000, guid: c49f2c481c08bb740af1e32de272fe3c, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,6 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d53da6af8d2d84d825addfcb4d8b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inCastleHitSound: {fileID: 8300000, guid: 68e471f760334e74099b5231e29f1df7, type: 3}
+  inWoodHitSound: {fileID: 8300000, guid: fdb037187cce19b409835a210215d579, type: 3}
+  inWoodParticlePrefab: {fileID: 100000, guid: 59b4beb83f353c84dbf7b42611e66cc2, type: 2}
   inStoneParticlePrefab: {fileID: 100000, guid: d4c7bc7df7ce33b469cd2a0c3f001e9d,
     type: 2}
 --- !u!212 &21200000

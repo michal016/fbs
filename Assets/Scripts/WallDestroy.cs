@@ -6,6 +6,7 @@ public class WallDestroy : MonoBehaviour
 
     private int destroylevel = 0;
     private SpriteRenderer spriteRenderer;
+    private AudioSource audioSource;
 
     public GameObject inBricks;
     public Sprite inStoneCrack;
@@ -13,12 +14,14 @@ public class WallDestroy : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void hit()
     {
         destroylevel++;
+        audioSource.Play();
 
         if (destroylevel == 1)
         {
@@ -28,7 +31,7 @@ public class WallDestroy : MonoBehaviour
         {
             spriteRenderer.sprite = inStoneCrack2;
         }
-        else if (destroylevel == 2)
+        else if (destroylevel >= 2)
         {
             Instantiate(inBricks, transform.position, transform.rotation);
             DestroyObject(gameObject);
@@ -37,10 +40,14 @@ public class WallDestroy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "floor")
+        Rigidbody2D rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
+        if (rigidbody2d != null)
         {
-            destroylevel = 2;
-            hit();
+            if (collision.gameObject.tag == "brick")
+            {
+                destroylevel = 2;
+                hit();
+            }
         }
     }
 }
