@@ -90,6 +90,7 @@ public class TurnManager : MonoBehaviour {
         if (!levelCompleted)
         {
             turn++;
+            Debug.Log(turn);
             messageManager.playerTurnMsg();
             characterManager.setActive(true);
         }
@@ -107,7 +108,7 @@ public class TurnManager : MonoBehaviour {
     {
         if (levelCompleted)
         {
-            if (Input.GetKey(KeyCode.Space) == true)
+            if (Input.anyKey)
             {
                 Application.LoadLevel("menu");
             }

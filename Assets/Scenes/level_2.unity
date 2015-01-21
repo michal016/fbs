@@ -4109,7 +4109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inDestroySound: {fileID: 8300000, guid: 568da309389c52447bfe5eafdd0a3a4d, type: 3}
-  isAlive: 1
 --- !u!82 &469707159
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4775,6 +4774,10 @@ Prefab:
     - target: {fileID: 11400004, guid: 92b6c7d4d237c684398b21cb57f2c40e, type: 2}
       propertyPath: inSpeed
       value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 92b6c7d4d237c684398b21cb57f2c40e, type: 2}
+      propertyPath: m_Mass
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92b6c7d4d237c684398b21cb57f2c40e, type: 2}
@@ -8184,7 +8187,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 517610920}
   m_GameObject: {fileID: 997749272}
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1

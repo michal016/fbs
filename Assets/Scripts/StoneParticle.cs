@@ -36,7 +36,7 @@ public class StoneParticle : MonoBehaviour {
                 WallDestroy wallDestroy = collision.collider.GetComponent<WallDestroy>();
                 
                 // End user turn
-                turnManager.startComputerTurn();
+                //turnManager.startComputerTurn();
                 
                 if (wallDestroy != null)
                 {
@@ -53,16 +53,13 @@ public class StoneParticle : MonoBehaviour {
                 // Play castle_hit sound
                 audioSource.clip = inWoodHitSound;
                 audioSource.Play();
-
-                // End user turn
-                turnManager.startComputerTurn();
             }
         }
-        else
-        {
-            // End user turn
-            turnManager.startComputerTurn();
-        }
+        //else
+        //{
+        //    // End user turn
+        //    turnManager.startComputerTurn();
+        //}
         isActive = false;
     }
 

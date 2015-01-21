@@ -11,7 +11,7 @@ public class Level2 : MonoBehaviour {
 
     private bool closingGate = false;
     private bool openingGate = false;
-    public bool isAlive = true;
+    private bool isAlive = true;
     private bool movement = false;
     private int movementFrame = 0;
     TurnManager turnManager;
@@ -88,7 +88,7 @@ public class Level2 : MonoBehaviour {
                 turnManager.startPlayerTurn();
             }
 
-            if (turn == 4)
+            if (turn >= 4)
             {
                 openingGate = true;
                 gate.open();
@@ -110,11 +110,6 @@ public class Level2 : MonoBehaviour {
             //    audioSource.Play();
             //    movement = true;
             //}
-        }
-        else
-        {
-            // Start user turn
-            turnManager.startPlayerTurn();
         }
     }
 
