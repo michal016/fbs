@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BrokenDeck : MonoBehaviour {
 
+    private bool isActive = true;
     private AudioSource audioSource;
     private TurnManager turnManager;
 
@@ -15,18 +16,21 @@ public class BrokenDeck : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.gameObject.tag == "wheel")
         {
-            // Play destroy sound
-            audioSource.Play();
+            if (isActive)
+            {
+                isActive = false;
+                // Play destroy sound
+                audioSource.Play();
 
-            collision.gameObject.GetComponent<Animator>().SetInteger("state", 1);
+                collision.gameObject.GetComponent<Animator>().SetInteger("state", 1);
 
-            // Player wins
-            Gate gate = FindObjectOfType<Gate>();
-            gate.open();
-            turnManager.playerWin();
+                // Player wins
+                Gate gate = FindObjectOfType<Gate>();
+                gate.open();
+                turnManager.playerWin();
+            }
         }
     }
 }

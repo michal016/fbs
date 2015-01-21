@@ -65,7 +65,7 @@ public class TurnManager : MonoBehaviour {
         int stars = calculateStars(inLevel, turn);
         
         messageManager.youWinMsg(stars);
-        GameState.setStars(inLevel - 1, stars);
+        GameState.setStars(inLevel, stars);
 
         SaveLoad.Save();
         levelCompleted = true;

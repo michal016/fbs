@@ -9,6 +9,7 @@ public class Level2 : MonoBehaviour {
     private AudioSource audioSource;
     private Gate gate;
 
+    private int stopFrame = 60;
     private bool closingGate = false;
     private bool openingGate = false;
     private bool isAlive = true;
@@ -36,21 +37,21 @@ public class Level2 : MonoBehaviour {
             position.x -= 0.02f;
             transform.position = position;
 
-            //if (movementFrame < 100)
+            if (movementFrame < stopFrame)
             {
                 movementFrame++;
             }
-            //else
-            //{
-            //    // End movement
-            //    animator.SetInteger("state", 0);
-            //    audioSource.Stop();
-            //    movementFrame = 0;
-            //    movement = false;
+            else
+            {
+                // End movement
+                animator.SetInteger("state", 0);
+                audioSource.Stop();
+                movementFrame = 0;
+                movement = false;
 
-            //    // Start user turn
-            //    turnManager.startPlayerTurn();
-            //}
+                // Start user turn
+                turnManager.startPlayerTurn();
+            }
         }
 
         if (openingGate)
@@ -84,12 +85,16 @@ public class Level2 : MonoBehaviour {
         {
             if (turn < 4)
             {
-                // Start user turn
-                turnManager.startPlayerTurn();
+                animator.SetInteger("state", 1);
+                audioSource.Play();
+                movement = true;
+                //// Start user turn
+                //turnManager.startPlayerTurn();
             }
 
             if (turn >= 4)
             {
+                stopFrame = 1000;
                 openingGate = true;
                 gate.open();
             }

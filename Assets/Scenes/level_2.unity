@@ -204,7 +204,7 @@ GameObject:
   - 61: {fileID: 61287705}
   - 114: {fileID: 61287703}
   - 82: {fileID: 61287707}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -995,7 +995,7 @@ Transform:
   m_PrefabInternal: {fileID: 983580812}
   m_GameObject: {fileID: 171775541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.17000008, y: -2.25300002, z: 0}
+  m_LocalPosition: {x: 5.4000001, y: -2.25300002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   - 61: {fileID: 246271023}
   - 114: {fileID: 246271021}
   - 82: {fileID: 246271025}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -2705,6 +2705,10 @@ Prefab:
       propertyPath: m_TagString
       value: castle
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -2893,7 +2897,7 @@ Transform:
   m_PrefabInternal: {fileID: 771762968}
   m_GameObject: {fileID: 263079713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.25299978, y: -.322999954, z: 0}
+  m_LocalPosition: {x: 7.28000021, y: -.323000014, z: 0}
   m_LocalScale: {x: .180000007, y: .180000007, z: .200000003}
   m_Children: []
   m_Father: {fileID: 1510078311}
@@ -3283,7 +3287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inWinSound: {fileID: 8300000, guid: 8124e032e7b91ae48800d75dd69f1d50, type: 3}
   inLoseSound: {fileID: 8300000, guid: 78ec4e6aead57894b96e3e7d99a159f4, type: 3}
-  inLevel: 1
+  inLevel: 2
 --- !u!4 &325036256
 Transform:
   m_ObjectHideFlags: 0
@@ -3588,6 +3592,10 @@ Prefab:
       propertyPath: m_TagString
       value: castle
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -3606,7 +3614,7 @@ GameObject:
   - 61: {fileID: 410596390}
   - 114: {fileID: 410596388}
   - 82: {fileID: 410596392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -3899,7 +3907,7 @@ GameObject:
   - 61: {fileID: 458268034}
   - 114: {fileID: 458268032}
   - 82: {fileID: 458268036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -4082,7 +4090,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f56370285ccc9d34a99b78651bb3c229, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &469707157
@@ -4092,7 +4100,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469707154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .583000183, y: -2.28399992, z: 0}
+  m_LocalPosition: {x: 4.79899979, y: -2.15400004, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4384,6 +4392,10 @@ Prefab:
     - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
       propertyPath: m_TagString
       value: castle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -4725,11 +4737,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 92b6c7d4d237c684398b21cb57f2c40e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.4300003
+      value: 10.0200005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92b6c7d4d237c684398b21cb57f2c40e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .219999999
+      value: .230000004
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 92b6c7d4d237c684398b21cb57f2c40e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4936,7 +4948,7 @@ GameObject:
   - 61: {fileID: 523411113}
   - 114: {fileID: 523411111}
   - 82: {fileID: 523411115}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -5253,7 +5265,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 563396188}
   - 212: {fileID: 563396189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: okno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5646,6 +5658,10 @@ Prefab:
       propertyPath: m_TagString
       value: castle
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -5801,11 +5817,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 9ef2f6a63f9a27f40b6dc41abeb2047c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.25299978
+      value: 7.28000021
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ef2f6a63f9a27f40b6dc41abeb2047c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.322999954
+      value: -.323000014
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ef2f6a63f9a27f40b6dc41abeb2047c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6130,6 +6146,10 @@ Prefab:
     - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
       propertyPath: m_TagString
       value: castle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -7355,6 +7375,10 @@ Prefab:
       propertyPath: m_TagString
       value: castle
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -7482,7 +7506,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .5, y: .300000012}
+  m_Size: {x: 5, y: .300000012}
   m_Center: {x: 0, y: 0}
 --- !u!4 &929465271
 Transform:
@@ -7491,7 +7515,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929465269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.67700005, y: .333999991, z: 0}
+  m_LocalPosition: {x: 4.97200012, y: .333999991, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 839018727}
@@ -7850,7 +7874,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e0a316390007ab14890b5a9abcab24e7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.17000008
+      value: 5.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0a316390007ab14890b5a9abcab24e7, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7878,7 +7902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e0a316390007ab14890b5a9abcab24e7, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e0a316390007ab14890b5a9abcab24e7, type: 2}
       propertyPath: m_TagString
@@ -8121,7 +8145,7 @@ Transform:
   m_PrefabInternal: {fileID: 517610920}
   m_GameObject: {fileID: 997749272}
   m_LocalRotation: {x: 0, y: 0, z: .0523359627, w: .99862957}
-  m_LocalPosition: {x: 10.4300003, y: .219999999, z: 0}
+  m_LocalPosition: {x: 10.0200005, y: .230000004, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1240007233}
@@ -8336,7 +8360,7 @@ GameObject:
   - 61: {fileID: 1010043412}
   - 114: {fileID: 1010043410}
   - 82: {fileID: 1010043415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -9713,7 +9737,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1094125683}
   - 212: {fileID: 1094125682}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: okno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10049,6 +10073,10 @@ Prefab:
       propertyPath: m_TagString
       value: castle
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -10117,7 +10145,7 @@ GameObject:
   - 61: {fileID: 1194765448}
   - 114: {fileID: 1194765446}
   - 82: {fileID: 1194765450}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
@@ -11291,6 +11319,10 @@ Prefab:
     - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
       propertyPath: m_TagString
       value: castle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5000000, guid: 25cc821728e3b604eabfd5ad837da0cb, type: 2}
@@ -13267,7 +13299,7 @@ GameObject:
   - 61: {fileID: 1682690367}
   - 114: {fileID: 1682690365}
   - 82: {fileID: 1682690369}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: castle
   m_Icon: {fileID: 0}
