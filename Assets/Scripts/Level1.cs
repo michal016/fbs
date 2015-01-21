@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMove : MonoBehaviour {
+public class Level1 : MonoBehaviour {
 
     private Animator animator;
     private AudioSource audioSource;
@@ -40,7 +40,6 @@ public class EnemyMove : MonoBehaviour {
                 movementFrame = 0;
                 movement = false;
 
-
                 // Start user turn
                 turnManager.startPlayerTurn();
             }
@@ -49,7 +48,6 @@ public class EnemyMove : MonoBehaviour {
 
     public void move(int turn)
     {
-
         if (turn == 5)
         {
             Deck deck = (Deck)FindObjectOfType<Deck>();

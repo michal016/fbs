@@ -61,14 +61,20 @@ public class MessageManager : MonoBehaviour {
 
     public void playerTurnMsg()
     {
-        showMessage(your_turn);
-        Invoke("HideAllMessages", 2.0f);
+        if (!you_lost.renderer.enabled)
+        {
+            showMessage(your_turn);
+            Invoke("HideAllMessages", 2.0f);
+        }
     }
 
     public void enemyTurnMsg()
     {
-        showMessage(enemy_turn);
-        Invoke("HideAllMessages", 2.0f);
+        if (!you_lost.renderer.enabled)
+        {
+            showMessage(enemy_turn);
+            Invoke("HideAllMessages", 2.0f);
+        }
     }
 
     public void youWinMsg(int turn)

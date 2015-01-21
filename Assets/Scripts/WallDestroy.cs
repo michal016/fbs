@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WallDestroy : MonoBehaviour {
+public class WallDestroy : MonoBehaviour
+{
 
     private int destroylevel = 0;
     private SpriteRenderer spriteRenderer;
 
-    public GameObject inBrick;
-    public GameObject inBrickSmall;
+    public GameObject inBricks;
     public Sprite inStoneCrack;
     public Sprite inStoneCrack2;
 
@@ -24,29 +24,23 @@ public class WallDestroy : MonoBehaviour {
         {
             spriteRenderer.sprite = inStoneCrack;
         }
-        else if (destroylevel == 2)
+        else if (destroylevel == 0)
         {
             spriteRenderer.sprite = inStoneCrack2;
         }
-        else if (destroylevel == 3)
+        else if (destroylevel == 2)
         {
-            Vector3 pos = transform.position;
-            pos.x -= 0.3f;
-
-            for (int i = 0; i < 20; i++)
-            {
-                pos.x += 0.01f;
-                pos.y += 0.01f; 
-                Instantiate(inBrick, pos, transform.rotation);
-            }
-            for (int i = 0; i < 20; i++)
-            {
-                pos.x += 0.01f;
-                pos.y += 0.01f; 
-                Instantiate(inBrickSmall, pos, transform.rotation);
-            }
-
+            Instantiate(inBricks, transform.position, transform.rotation);
             DestroyObject(gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "floor")
+        {
+            destroylevel = 2;
+            hit();
         }
     }
 }

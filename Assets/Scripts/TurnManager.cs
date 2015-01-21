@@ -8,9 +8,9 @@ public class TurnManager : MonoBehaviour {
     public int inLevel;
     private AudioSource audioSource;
 
+    private LevelManager levelManager;
     private MessageManager messageManager;
     private CharacterManager characterManager;
-    private EnemyMove enemyMove;
     private bool gameLock = false;
     private int turn = 0;
     private bool levelCompleted = false;
@@ -19,27 +19,33 @@ public class TurnManager : MonoBehaviour {
     {
         audioSource = gameObject.GetComponent<AudioSource>();
 
+        levelManager = FindObjectOfType<LevelManager>();
         messageManager = FindObjectOfType<MessageManager>();
         characterManager = FindObjectOfType<CharacterManager>();
-        enemyMove = FindObjectOfType<EnemyMove>();
 
         Invoke("beginPlayerTurn", 2.0f);
     }
 
     public void startPlayerTurn()
     {
-        if (!gameLock)
+        if (!levelCompleted)
         {
-            Invoke("beginPlayerTurn", 2.0f);
+            if (!gameLock)
+            {
+                Invoke("beginPlayerTurn", 2.0f);
+            }
         }
     }
 
     public void startComputerTurn()
     {
-        if (!gameLock)
+        if (!levelCompleted)
         {
-            messageManager.enemyTurnMsg();
-            Invoke("beginComputerTurn", 2.0f);
+            if (!gameLock)
+            {
+                messageManager.enemyTurnMsg();
+                Invoke("beginComputerTurn", 2.0f);
+            }
         }
     }
 
@@ -57,7 +63,7 @@ public class TurnManager : MonoBehaviour {
         lockUserMoves();
         messageManager.youWinMsg(turn);
 
-        GameState.setStars(inLevel, turn);
+        GameState.setStars(inLevel - 1, turn);
 
         SaveLoad.Save();
         levelCompleted = true;
@@ -65,12 +71,16 @@ public class TurnManager : MonoBehaviour {
 
     public void gameOver()
     {
-        audioSource.clip = inLoseSound;
-        audioSource.Play();
+        if (!levelCompleted)
+        {
+            audioSource.clip = inLoseSound;
+            audioSource.Play();
 
-        gameLock = true;
-        lockUserMoves();
-        messageManager.youLostMsg();
+            gameLock = true;
+            lockUserMoves();
+            messageManager.youLostMsg();
+            levelCompleted = true;
+        }
     }
 
     private void beginPlayerTurn()
@@ -82,7 +92,7 @@ public class TurnManager : MonoBehaviour {
 
     private void beginComputerTurn()
     {
-        enemyMove.move(turn);
+        levelManager.computerTurn(turn);
     }
 
     void Update()

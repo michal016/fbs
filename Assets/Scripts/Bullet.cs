@@ -62,7 +62,7 @@ public class Bullet : MonoBehaviour {
                 collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(0.34f, 0.25f);
 
                 // Enemy kill (stop moving)
-                EnemyMove enemyMove = (EnemyMove)collision.collider.gameObject.GetComponent<EnemyMove>();
+                Level1 enemyMove = (Level1)collision.collider.gameObject.GetComponent<Level1>();
 
                 if (enemyMove)
                 {

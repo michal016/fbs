@@ -8,8 +8,11 @@ TagManager:
   - enemy
   - gameOver
   - mainFloor
-  - 
+  - brick
   - castle
+  - brickCollider
+  - brokenDeck
+  - floor
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -22,10 +25,10 @@ TagManager:
   User Layer 8: bullet
   User Layer 9: character
   User Layer 10: castle
-  User Layer 11: 
-  User Layer 12: 
-  User Layer 13: 
-  User Layer 14: 
+  User Layer 11: brickCollider
+  User Layer 12: brick
+  User Layer 13: crusader
+  User Layer 14: floor
   User Layer 15: 
   User Layer 16: 
   User Layer 17: 

@@ -4,6 +4,7 @@ using System.Collections;
 public class Gate : MonoBehaviour {
 
     private bool openingGate = false;
+    private bool closingGate = false;
     private AudioSource audioSource;
 
 	// Use this for initialization
@@ -27,11 +28,40 @@ public class Gate : MonoBehaviour {
             }
         }
 
-	}
+        if (closingGate)
+        {
+            if (transform.rotation.z > 0.0f)
+            {
+                transform.Rotate(new Vector3(0f, 0f, -0.3f));
+            }
+            else
+            {
+                audioSource.Stop();
+                openingGate = false;
+            }
+        }
+
+    }
 
     public void open()
     {
         openingGate = true;
         audioSource.Play();
+    }
+
+    public bool isOpening()
+    {
+        return openingGate;
+    }
+
+    public void close()
+    {
+        closingGate = true;
+        audioSource.Play();
+    }
+
+    public bool isClosing()
+    {
+        return closingGate;
     }
 }

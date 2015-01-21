@@ -13,7 +13,7 @@ public class StoneParticle : MonoBehaviour {
             if (isActive)
             {
                 GameObject newBullet = Instantiate(inStoneParticlePrefab, transform.position, transform.rotation) as GameObject;
-                isActive = false;
+                
 
                 DestroyObject(gameObject);
 
@@ -21,6 +21,7 @@ public class StoneParticle : MonoBehaviour {
                 collision.collider.GetComponent<WallDestroy>().hit();
             }
         }
+        isActive = false;
     }
 
 	// Use this for initialization

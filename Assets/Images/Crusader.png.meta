@@ -1,0 +1,1741 @@
+fileFormatVersion: 2
+guid: f56370285ccc9d34a99b78651bb3c229
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Crusader_0
+    21300002: Crusader_1
+    21300004: Crusader_2
+    21300006: Crusader_3
+    21300008: Crusader_4
+    21300010: Crusader_5
+    21300012: Crusader_6
+    21300014: Crusader_7
+    21300016: Crusader_8
+    21300018: Crusader_9
+    21300020: Crusader_10
+    21300022: Crusader_11
+    21300024: Crusader_12
+    21300026: Crusader_13
+    21300028: Crusader_14
+    21300030: Crusader_15
+    21300032: Crusader_16
+    21300034: Crusader_17
+    21300036: Crusader_18
+    21300038: Crusader_19
+    21300040: Crusader_20
+    21300042: Crusader_21
+    21300044: Crusader_22
+    21300046: Crusader_23
+    21300048: Crusader_24
+    21300050: Crusader_25
+    21300052: Crusader_26
+    21300054: Crusader_27
+    21300056: Crusader_28
+    21300058: Crusader_29
+    21300060: Crusader_30
+    21300062: Crusader_31
+    21300064: Crusader_32
+    21300066: Crusader_33
+    21300068: Crusader_34
+    21300070: Crusader_35
+    21300072: Crusader_36
+    21300074: Crusader_37
+    21300076: Crusader_38
+    21300078: Crusader_39
+    21300080: Crusader_40
+    21300082: Crusader_41
+    21300084: Crusader_42
+    21300086: Crusader_43
+    21300088: Crusader_44
+    21300090: Crusader_45
+    21300092: Crusader_46
+    21300094: Crusader_47
+    21300096: Crusader_48
+    21300098: Crusader_49
+    21300100: Crusader_50
+    21300102: Crusader_51
+    21300104: Crusader_52
+    21300106: Crusader_53
+    21300108: Crusader_54
+    21300110: Crusader_55
+    21300112: Crusader_56
+    21300114: Crusader_57
+    21300116: Crusader_58
+    21300118: Crusader_59
+    21300120: Crusader_60
+    21300122: Crusader_61
+    21300124: Crusader_62
+    21300126: Crusader_63
+    21300128: Crusader_64
+    21300130: Crusader_65
+    21300132: Crusader_66
+    21300134: Crusader_67
+    21300136: Crusader_68
+    21300138: Crusader_69
+    21300140: Crusader_70
+    21300142: Crusader_71
+    21300144: Crusader_72
+    21300146: Crusader_73
+    21300148: Crusader_74
+    21300150: Crusader_75
+    21300152: Crusader_76
+    21300154: Crusader_77
+    21300156: Crusader_78
+    21300158: Crusader_79
+    21300160: Crusader_80
+    21300162: Crusader_81
+    21300164: Crusader_82
+    21300166: Crusader_83
+    21300168: Crusader_84
+    21300170: Crusader_85
+    21300172: Crusader_86
+    21300174: Crusader_87
+    21300176: Crusader_88
+    21300178: Crusader_89
+    21300180: Crusader_90
+    21300182: Crusader_91
+    21300184: Crusader_92
+    21300186: Crusader_93
+    21300188: Crusader_94
+    21300190: Crusader_95
+    21300192: Crusader_96
+    21300194: Crusader_97
+    21300196: Crusader_98
+    21300198: Crusader_99
+    21300200: Crusader_100
+    21300202: Crusader_101
+    21300204: Crusader_102
+    21300206: Crusader_103
+    21300208: Crusader_104
+    21300210: Crusader_105
+    21300212: Crusader_106
+    21300214: Crusader_107
+    21300216: Crusader_108
+    21300218: Crusader_109
+    21300220: Crusader_110
+    21300222: Crusader_111
+    21300224: Crusader_112
+    21300226: Crusader_113
+    21300228: Crusader_114
+    21300230: Crusader_115
+    21300232: Crusader_116
+    21300234: Crusader_117
+    21300236: Crusader_118
+    21300238: Crusader_119
+    21300240: Crusader_120
+    21300242: Crusader_121
+    21300244: Crusader_122
+    21300246: Crusader_123
+    21300248: Crusader_124
+    21300250: Crusader_125
+    21300252: Crusader_126
+    21300254: Crusader_127
+    21300256: Crusader_128
+    21300258: Crusader_129
+    21300260: Crusader_130
+    21300262: Crusader_131
+    21300264: Crusader_132
+    21300266: Crusader_133
+    21300268: Crusader_134
+    21300270: Crusader_135
+    21300272: Crusader_136
+    21300274: Crusader_137
+    21300276: Crusader_138
+    21300278: Crusader_139
+    21300280: Crusader_140
+    21300282: Crusader_141
+    21300284: Crusader_142
+    21300286: Crusader_143
+    21300288: Crusader_144
+    21300290: Crusader_145
+    21300292: Crusader_146
+    21300294: Crusader_147
+    21300296: Crusader_148
+    21300298: Crusader_149
+    21300300: Crusader_150
+    21300302: Crusader_151
+    21300304: Crusader_152
+    21300306: Crusader_153
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Crusader_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 797
+        width: 41
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 797
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 797
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 797
+        width: 51
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 797
+        width: 41
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 797
+        width: 41
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 797
+        width: 41
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 797
+        width: 40
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 797
+        width: 41
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_9
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 801
+        width: 40
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_10
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 799
+        width: 36
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 557
+        width: 66
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_12
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 665
+        width: 48
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 664
+        width: 71
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 664
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 665
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_16
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 659
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_17
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 655
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_18
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 655
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_19
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 663
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_20
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 655
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_21
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 655
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_22
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 655
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_23
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 655
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_24
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 655
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_25
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 655
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 557
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_27
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 557
+        width: 63
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_28
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 557
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_29
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 557
+        width: 49
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_30
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 637
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_31
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_32
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 637
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_33
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_34
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_35
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 637
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_36
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_37
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 637
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_38
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 637
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_39
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 634
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_40
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 637
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_41
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 637
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_42
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_43
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_44
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 637
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_45
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 637
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_46
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 637
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_47
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 634
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_48
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 637
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_49
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 637
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_50
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 637
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_51
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 637
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_52
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 557
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_53
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 557
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_54
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 619
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_55
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 619
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_56
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 617
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_57
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 619
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_58
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 619
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_59
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 619
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_60
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 616
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_61
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 619
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_62
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 619
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_63
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 619
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_64
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 619
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_65
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 619
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_66
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 619
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_67
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 619
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_68
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 619
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_69
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 437
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 417
+        width: 62
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_71
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 427
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_72
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 436
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_73
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 467
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_74
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 464
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_75
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 464
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 467
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_77
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 467
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_78
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 467
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_79
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 464
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_80
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 406
+        width: 85
+        height: 175
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_81
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 449
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_82
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 449
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_83
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 449
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_84
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 449
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_85
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 449
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_86
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 449
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_87
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 449
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_88
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 449
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_89
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 449
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_90
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 449
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_91
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 449
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_92
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 449
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_93
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 433
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_94
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 433
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_95
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 433
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_96
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 433
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_97
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 430
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_98
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 433
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_99
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 433
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_100
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 433
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_101
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 431
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_102
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 430
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_103
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 433
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_104
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 433
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_105
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 433
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_106
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 433
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_107
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 433
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_108
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 414
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_109
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_110
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_111
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 417
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_112
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_113
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 414
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_114
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_115
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_116
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_117
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 417
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_118
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 417
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_119
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 417
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_120
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 417
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_121
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 293
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_122
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 294
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_123
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 294
+        width: 71
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_124
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 295
+        width: 66
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_125
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 296
+        width: 59
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_126
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 292
+        width: 55
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_127
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 291
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_128
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 291
+        width: 53
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_129
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 292
+        width: 53
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_130
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 295
+        width: 73
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_131
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 294
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_132
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 294
+        width: 54
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_133
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 153
+        width: 65
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_134
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 153
+        width: 91
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_135
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 153
+        width: 118
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_136
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 153
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_137
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 153
+        width: 56
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_138
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 153
+        width: 57
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_139
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 177
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_140
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 177
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_141
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 177
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_142
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 177
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_143
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 177
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_144
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 16
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_145
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 82
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_146
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 92
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_147
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 93
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_148
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 26
+        width: 50
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_149
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 25
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_150
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 26
+        width: 59
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_151
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 26
+        width: 58
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_152
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 26
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Crusader_153
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 26
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d53da6af8d2d84d825addfcb4d8b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inStoneCrack: {fileID: 21300000, guid: a5a910fe2c0b9834098783fe5a875ef1, type: 3}
   inStoneParticlePrefab: {fileID: 100000, guid: d4c7bc7df7ce33b469cd2a0c3f001e9d,
     type: 2}
 --- !u!212 &21200000
