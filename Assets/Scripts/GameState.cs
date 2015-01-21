@@ -20,7 +20,7 @@ public class GameState
 
         if (stars > levelStars[level - 1])
         {
-            levelStars[level] = stars;
+            levelStars[level - 1] = stars;
         }
     }
 }

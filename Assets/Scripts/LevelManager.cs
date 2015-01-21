@@ -6,6 +6,7 @@ public class LevelManager : MonoBehaviour {
     public int inLevel;
     private Level1 level1;
     private Level2 level2;
+    private Level3 level3;
 
 
 
@@ -14,6 +15,7 @@ public class LevelManager : MonoBehaviour {
     {
         level1 = FindObjectOfType<Level1>();
         level2 = FindObjectOfType<Level2>();
+        level3 = FindObjectOfType<Level3>();
 	}
 
     public void computerTurn(int turn)
@@ -44,5 +46,6 @@ public class LevelManager : MonoBehaviour {
 
     private void computerTurnLevel3(int turn)
     {
+        level3.move(turn);
     }
 }
