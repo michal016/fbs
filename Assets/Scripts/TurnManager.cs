@@ -113,6 +113,11 @@ public class TurnManager : MonoBehaviour {
                 Application.LoadLevel("menu");
             }
         }
+
+        if (Input.GetKey(KeyCode.Escape) == true)
+        {
+            Application.LoadLevel("menu");
+        }
     }
 
     private int calculateStars(int level, int turn)

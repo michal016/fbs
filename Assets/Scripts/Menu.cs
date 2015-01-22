@@ -31,4 +31,9 @@ public class Menu : MonoBehaviour {
             Application.LoadLevel("level_3");
         }
     }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }
