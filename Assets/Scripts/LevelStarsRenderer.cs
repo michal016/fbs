@@ -13,6 +13,9 @@ public class LevelStarsRenderer : MonoBehaviour {
     private GameObject star_whiteblack2;
     private GameObject star_whiteblack3;
 
+    private GameObject level2WB;
+    private GameObject level3WB;
+
 	// Use this for initialization
 	void Start () {
 
@@ -29,6 +32,26 @@ public class LevelStarsRenderer : MonoBehaviour {
         star1.renderer.enabled = false;
         star2.renderer.enabled = false;
         star3.renderer.enabled = false;
+
+        if (inLevel == 2)
+        {
+            level2WB = transform.Find("level2wb").gameObject;
+
+            if (GameState.isLevelEnabled(2))
+            {
+                level2WB.renderer.enabled = false;
+            }
+        }
+
+        if (inLevel == 3)
+        {
+            level3WB = transform.Find("level3wb").gameObject;
+
+            if (GameState.isLevelEnabled(3))
+            {
+                level3WB.renderer.enabled = false;
+            }
+        }
 
         showStars();
 	}

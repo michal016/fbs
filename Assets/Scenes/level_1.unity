@@ -2267,7 +2267,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 395912486}
   - 61: {fileID: 395912485}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: gameOver
   m_TagString: gameOver
   m_Icon: {fileID: -1203168336, guid: 0000000000000000d000000000000000, type: 0}
