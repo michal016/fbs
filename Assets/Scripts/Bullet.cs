@@ -95,7 +95,6 @@ public class Bullet : MonoBehaviour {
 
                 if (collision.gameObject.tag == "arrowCollider" && gameObject.tag == "fireBullet")
                 {
-
                     // Play castle_hit sound
                     audioSource.clip = inArrowHitCastleSound;
                     audioSource.Play();

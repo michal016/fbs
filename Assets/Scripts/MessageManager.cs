@@ -83,7 +83,7 @@ public class MessageManager : MonoBehaviour {
     public void youWinMsg(int stars)
     {
         HideAllMessages();
-        showMessage(you_win);
+        you_win.renderer.enabled = true;
 
         Invoke("showWhiteBlackStars", 1.0f);
 
