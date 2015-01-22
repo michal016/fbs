@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 2877db30259578840b478d9f089e8a42
+guid: efceaa170809693408ae3eb082c69710
 TextureImporter:
   fileIDToRecycleName:
     21300000: your_turn
     21300002: enemy_turn
     21300004: you_win
     21300006: you_lost
+    21300008: target
+    21300010: arrow
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,40 +52,60 @@ TextureImporter:
     - name: your_turn
       rect:
         serializedVersion: 2
-        x: 10
-        y: 328
-        width: 182
-        height: 49
+        x: 5
+        y: 456
+        width: 154
+        height: 35
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enemy_turn
       rect:
         serializedVersion: 2
-        x: 13
-        y: 272
-        width: 464
-        height: 47
+        x: 9
+        y: 410
+        width: 387
+        height: 37
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: you_win
       rect:
         serializedVersion: 2
-        x: 13
-        y: 203
-        width: 313
-        height: 54
+        x: 10
+        y: 337
+        width: 386
+        height: 72
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: you_lost
       rect:
         serializedVersion: 2
-        x: 16
-        y: 47
-        width: 468
-        height: 148
+        x: 10
+        y: 189
+        width: 386
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: target
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 94
+        width: 338
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 13
+        width: 63
+        height: 79
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

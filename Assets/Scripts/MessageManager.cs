@@ -8,6 +8,7 @@ public class MessageManager : MonoBehaviour {
     private GameObject you_win;
     private GameObject you_lost;
     private GameObject target;
+    private GameObject arrow;
 
     private GameObject star1;
     private GameObject star2;
@@ -27,6 +28,7 @@ public class MessageManager : MonoBehaviour {
         you_win = transform.Find("you_win").gameObject;
         you_lost = transform.Find("you_lost").gameObject;
         target = transform.Find("target").gameObject;
+        arrow = transform.Find("arrow").gameObject;
 
         star1 = transform.Find("star1").gameObject;
         star2 = transform.Find("star2").gameObject;
@@ -57,6 +59,7 @@ public class MessageManager : MonoBehaviour {
     public void hideTargetMsg()
     {
         target.renderer.enabled = false;
+        arrow.renderer.enabled = false;
     }
 
     public void playerTurnMsg()

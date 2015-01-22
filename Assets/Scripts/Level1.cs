@@ -87,4 +87,9 @@ public class Level1 : MonoBehaviour {
     {
         this.isAlive = false;
     }
+
+    public bool getAlive()
+    {
+        return isAlive;
+    }
 }

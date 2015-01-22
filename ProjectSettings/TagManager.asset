@@ -16,6 +16,7 @@ TagManager:
   - wood
   - gearBox
   - fireBullet
+  - gate
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

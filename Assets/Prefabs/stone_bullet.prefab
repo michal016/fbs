@@ -130,6 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inDestroySound: {fileID: 8300000, guid: fdb037187cce19b409835a210215d579, type: 3}
   inDeathSound: {fileID: 8300000, guid: ad1d4fa7596743f48952e73bd5227de7, type: 3}
+  inCastleHitSound: {fileID: 8300000, guid: 68e471f760334e74099b5231e29f1df7, type: 3}
+  inWoodHitSound: {fileID: 8300000, guid: fdb037187cce19b409835a210215d579, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

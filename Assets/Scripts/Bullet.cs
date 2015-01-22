@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour {
     public AudioClip inDestroySound;
     public AudioClip inDeathSound;
     public AudioClip inCastleHitSound;
+    public AudioClip inWoodHitSound;
 
     public bool getActive()
     {
@@ -51,27 +52,26 @@ public class Bullet : MonoBehaviour {
             }
             else if (collision.gameObject.tag == "enemy")
             {
-                // Play death sound
-                audioSource.clip = inDeathSound;
-                audioSource.Play();
-
-                // Enemy hit
-                Animator enemyAnimator = collision.collider.gameObject.GetComponent<Animator>();
-                enemyAnimator.SetInteger("state", 2);
-
-                collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(0.34f, 0.25f);
-
                 // Enemy kill (stop moving)
                 Level1 enemyMove = (Level1)collision.collider.gameObject.GetComponent<Level1>();
 
-                if (enemyMove)
+                if (enemyMove != null && enemyMove.getAlive())
                 {
-                    enemyMove.kill();
+                    // Play death sound
+                    audioSource.clip = inDeathSound;
+                    audioSource.Play();
+
+                    // Enemy hit
+                    Animator enemyAnimator = collision.collider.gameObject.GetComponent<Animator>();
+                    enemyAnimator.SetInteger("state", 2);
+
+                    collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(0.34f, 0.25f);
+
+                    if (enemyMove)
+                    {
+                        enemyMove.kill();
+                    }
                 }
-                //// Player wins
-                //Gate gate = FindObjectOfType<Gate>();
-                //gate.open();
-                //turnManager.playerWin();
 
                 // End user turn
                 turnManager.startComputerTurn();
@@ -82,6 +82,13 @@ public class Bullet : MonoBehaviour {
                 {
                     // Play castle_hit sound
                     audioSource.clip = inCastleHitSound;
+                    audioSource.Play();
+                }
+
+                if (collision.gameObject.tag == "wood" || collision.gameObject.tag == "gate")
+                {
+                    // Play castle_hit sound
+                    audioSource.clip = inWoodHitSound;
                     audioSource.Play();
                 }
 
