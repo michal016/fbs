@@ -17,6 +17,7 @@ TagManager:
   - gearBox
   - fireBullet
   - gate
+  - arrowCollider
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -34,8 +35,8 @@ TagManager:
   User Layer 13: crusader
   User Layer 14: floor
   User Layer 15: gameOver
-  User Layer 16: 
-  User Layer 17: 
+  User Layer 16: arrowCollider
+  User Layer 17: fireBullet
   User Layer 18: 
   User Layer 19: 
   User Layer 20: 

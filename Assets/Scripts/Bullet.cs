@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour {
     public AudioClip inDeathSound;
     public AudioClip inCastleHitSound;
     public AudioClip inWoodHitSound;
+    public AudioClip inArrowHitCastleSound;
 
     public bool getActive()
     {
@@ -89,6 +90,14 @@ public class Bullet : MonoBehaviour {
                 {
                     // Play castle_hit sound
                     audioSource.clip = inWoodHitSound;
+                    audioSource.Play();
+                }
+
+                if (collision.gameObject.tag == "arrowCollider" && gameObject.tag == "fireBullet")
+                {
+
+                    // Play castle_hit sound
+                    audioSource.clip = inArrowHitCastleSound;
                     audioSource.Play();
                 }
 

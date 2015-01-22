@@ -11,7 +11,7 @@ GameObject:
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
   - 114: {fileID: 11400000}
-  m_Layer: 4
+  m_Layer: 17
   m_Name: fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 82: {fileID: 8200000}
-  m_Layer: 8
+  m_Layer: 17
   m_Name: fireBullet
   m_TagString: fireBullet
   m_Icon: {fileID: 0}
@@ -172,6 +172,9 @@ MonoBehaviour:
   inDestroySound: {fileID: 8300000, guid: fdb037187cce19b409835a210215d579, type: 3}
   inDeathSound: {fileID: 8300000, guid: ad1d4fa7596743f48952e73bd5227de7, type: 3}
   inCastleHitSound: {fileID: 8300000, guid: c49f2c481c08bb740af1e32de272fe3c, type: 3}
+  inWoodHitSound: {fileID: 8300000, guid: fdb037187cce19b409835a210215d579, type: 3}
+  inArrowHitCastleSound: {fileID: 8300000, guid: c49f2c481c08bb740af1e32de272fe3c,
+    type: 3}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
