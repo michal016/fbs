@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// User's  moves handling
 public class CharacterMove : MonoBehaviour
 {
-
     private Animator animator;
     private AudioSource audioSource;
-
     public float inSpeed = 0.05f;
     private bool isActive = false;
     private TurnManager turnManager;
 
-
+    // Sets character active
     public void setActive(bool active)
     {
         turnManager = FindObjectOfType<TurnManager>();
@@ -34,6 +33,7 @@ public class CharacterMove : MonoBehaviour
             Vector3 pos = transform.localPosition;
             Vector3 scale = transform.localScale;
 
+            // Move left
             if (Input.GetKey(KeyCode.LeftArrow) == true)
             {
                 // Play sound
@@ -49,6 +49,7 @@ public class CharacterMove : MonoBehaviour
                 pos.x -= inSpeed;
             }
 
+            // Move right
             if (Input.GetKey(KeyCode.RightArrow) == true)
             {
                 // Play sound
@@ -64,6 +65,7 @@ public class CharacterMove : MonoBehaviour
                 pos.x += inSpeed;
             }
 
+            // Stops animation and sound playing after key release
             if (Input.GetKeyUp(KeyCode.RightArrow) == true || Input.GetKeyUp(KeyCode.LeftArrow) == true)
             {
                 animator.SetInteger("state", 0);
@@ -75,6 +77,7 @@ public class CharacterMove : MonoBehaviour
         }
     }
 
+    // On falling - game over
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "mainFloor")

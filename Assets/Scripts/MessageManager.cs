@@ -56,12 +56,14 @@ public class MessageManager : MonoBehaviour {
         Invoke("hideTargetMsg", 2.0f);
     }
 
+    // Hide the target message
     public void hideTargetMsg()
     {
         target.renderer.enabled = false;
         arrow.renderer.enabled = false;
     }
 
+    // Show player turn message
     public void playerTurnMsg()
     {
         if (!you_lost.renderer.enabled)
@@ -71,6 +73,7 @@ public class MessageManager : MonoBehaviour {
         }
     }
 
+    // Show enemy turn message
     public void enemyTurnMsg()
     {
         if (!you_lost.renderer.enabled)
@@ -80,13 +83,16 @@ public class MessageManager : MonoBehaviour {
         }
     }
 
+    // Show win message
     public void youWinMsg(int stars)
     {
+        // Hide previous messages
         HideAllMessages();
         you_win.renderer.enabled = true;
 
         Invoke("showWhiteBlackStars", 1.0f);
 
+        // Show stars
         if (stars > 0)
         {
             // show the first star
@@ -108,6 +114,7 @@ public class MessageManager : MonoBehaviour {
         }
     }
 
+    // Show white-black stars
     private void showWhiteBlackStars()
     {
         star_whiteblack1.renderer.enabled = true;
@@ -115,27 +122,32 @@ public class MessageManager : MonoBehaviour {
         star_whiteblack3.renderer.enabled = true;
     }
 
+    // Show star 1
     private void showStar1()
     {
         star1.renderer.enabled = true;
     }
 
+    // Show star 2
     private void showStar2()
     {
         star2.renderer.enabled = true;
     }
 
+    // Show star 3
     private void showStar3()
     {
         star3.renderer.enabled = true;
     }
 
+    // Show you lost message
     public void youLostMsg()
     {
         HideAllMessages();
         you_lost.renderer.enabled = true;
     }
 
+    // Show the given message
     private void showMessage(GameObject message)
     {
         HideAllMessages();
@@ -143,13 +155,13 @@ public class MessageManager : MonoBehaviour {
         activeMessages.Add(message);
     }
 
+    // Hide all messages
     private void HideAllMessages()
     {
         foreach (GameObject message in activeMessages)
         {
             message.renderer.enabled = false;
         }
-
         activeMessages.Clear();
     }
 }

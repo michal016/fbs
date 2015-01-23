@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour {
     public AudioClip inWoodHitSound;
     public AudioClip inArrowHitCastleSound;
 
+    // Return if bullet is active
     public bool getActive()
     {
         return isActive;
@@ -31,16 +32,18 @@ public class Bullet : MonoBehaviour {
         {
             isActive = false;
 
+            // If collision with wheel - player wins
             if (collision.gameObject.tag == "wheel")
             {
                 // Play destroy sound
                 audioSource.clip = inDestroySound;
                 audioSource.Play();
 
+                // Start destroy animation
                 collision.gameObject.GetComponent<Animator>().SetInteger("state", 1);
 
+                // Make collider smaller
                 BoxCollider2D wheelCollider = collision.gameObject.GetComponent<BoxCollider2D>();
-
                 wheelCollider.size = new Vector2(0.69f, 0.3f);
                 Vector2 center = wheelCollider.center;
                 center.y -= 0.15f;
@@ -51,6 +54,7 @@ public class Bullet : MonoBehaviour {
                 gate.open();
                 turnManager.playerWin();
             }
+            // If collision with enemy
             else if (collision.gameObject.tag == "enemy")
             {
                 // Enemy kill (stop moving)
@@ -65,7 +69,6 @@ public class Bullet : MonoBehaviour {
                     // Enemy hit
                     Animator enemyAnimator = collision.collider.gameObject.GetComponent<Animator>();
                     enemyAnimator.SetInteger("state", 2);
-
                     collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(0.34f, 0.25f);
 
                     if (enemyMove)

@@ -18,7 +18,6 @@ public class TurnManager : MonoBehaviour {
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
-
         levelManager = FindObjectOfType<LevelManager>();
         messageManager = FindObjectOfType<MessageManager>();
         characterManager = FindObjectOfType<CharacterManager>();
@@ -26,6 +25,7 @@ public class TurnManager : MonoBehaviour {
         Invoke("beginPlayerTurn", 2.0f);
     }
 
+    // Start player's turn
     public void startPlayerTurn()
     {
         if (!levelCompleted)
@@ -37,6 +37,7 @@ public class TurnManager : MonoBehaviour {
         }
     }
 
+    // Start computer turn
     public void startComputerTurn()
     {
         if (!levelCompleted)
@@ -49,11 +50,14 @@ public class TurnManager : MonoBehaviour {
         }
     }
 
+    // Disable user moves
     public void lockUserMoves()
     {
         characterManager.setActive(false);
     }
 
+    // Player wins (display information and
+    // disable moves)
     public void playerWin()
     {
         audioSource.clip = inWinSound;
@@ -71,6 +75,8 @@ public class TurnManager : MonoBehaviour {
         levelCompleted = true;
     }
 
+    // Player lose (display information and
+    // disable moves)
     public void gameOver()
     {
         if (!levelCompleted)
@@ -85,6 +91,7 @@ public class TurnManager : MonoBehaviour {
         }
     }
 
+    // Begins player turn now
     private void beginPlayerTurn()
     {
         if (!levelCompleted)
@@ -96,6 +103,7 @@ public class TurnManager : MonoBehaviour {
         }
     }
 
+    // Begins computer turn now
     private void beginComputerTurn()
     {
         if (!levelCompleted)
@@ -106,6 +114,7 @@ public class TurnManager : MonoBehaviour {
 
     void Update()
     {
+        // If level completed - any key backs to menu
         if (levelCompleted)
         {
             if (Input.anyKey)
@@ -114,12 +123,15 @@ public class TurnManager : MonoBehaviour {
             }
         }
 
+        // If escape pushed - back to menu
         if (Input.GetKey(KeyCode.Escape) == true)
         {
             Application.LoadLevel("menu");
         }
     }
 
+    // Calculate number of stars
+    // Depending on level and turns
     private int calculateStars(int level, int turn)
     {
         if (level == 1)

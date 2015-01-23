@@ -15,6 +15,7 @@ public class Gate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        // If gate is opening
         if (openingGate)
         {
             if (transform.rotation.z < 0.7f)
@@ -28,6 +29,7 @@ public class Gate : MonoBehaviour {
             }
         }
 
+        // If gate is closing
         if (closingGate)
         {
             if (transform.rotation.z > 0.0f)
@@ -43,23 +45,27 @@ public class Gate : MonoBehaviour {
 
     }
 
+    // Start opening the gate
     public void open()
     {
         openingGate = true;
         audioSource.Play();
     }
 
+    // Check if gate is being opened
     public bool isOpening()
     {
         return openingGate;
     }
 
+    // Start closing the gate
     public void close()
     {
         closingGate = true;
         audioSource.Play();
     }
 
+    // Check if gate is being closed
     public bool isClosing()
     {
         return closingGate;

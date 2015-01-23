@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Renders the stars in menu
 public class LevelStarsRenderer : MonoBehaviour {
 
     public int inLevel;
@@ -19,6 +20,7 @@ public class LevelStarsRenderer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        // Loads saved game from file
         SaveLoad.Load();     
 
         star1 = transform.Find("star1").gameObject;
@@ -33,6 +35,7 @@ public class LevelStarsRenderer : MonoBehaviour {
         star2.renderer.enabled = false;
         star3.renderer.enabled = false;
 
+        // If 2nd level - hide w-b graphic
         if (inLevel == 2)
         {
             level2WB = transform.Find("level2wb").gameObject;
@@ -43,6 +46,7 @@ public class LevelStarsRenderer : MonoBehaviour {
             }
         }
 
+        // If 3rd level - hide w-b graphic
         if (inLevel == 3)
         {
             level3WB = transform.Find("level3wb").gameObject;
@@ -56,6 +60,7 @@ public class LevelStarsRenderer : MonoBehaviour {
         showStars();
 	}
 
+    // Show number of stars over level button
     public void showStars()
     {
         int stars = GameState.levelStars[inLevel - 1];
@@ -73,9 +78,4 @@ public class LevelStarsRenderer : MonoBehaviour {
             }
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

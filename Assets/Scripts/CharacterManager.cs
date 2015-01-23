@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Class used to choice character to play
 public class CharacterManager : MonoBehaviour {
 
     Animator animator;
-
     public float inSpeed = 0.05f;
-
     public GameObject[] inCharacters;
-
     private bool isActive = false;
     private int selected = 0;
 
+    // Activates player's move
     public void setActive(bool active)
     {
         isActive = active;
@@ -56,6 +55,7 @@ public class CharacterManager : MonoBehaviour {
         }
 	}
 
+    // Shows arrow over character and makes it active
     void showArrow(int selected)
     {
 
@@ -76,6 +76,7 @@ public class CharacterManager : MonoBehaviour {
         animator = inCharacters[selected].GetComponent<Animator>();
     }
 
+    // Hides arrow over character and locks his moves
     void hideArrow(int selected)
     {
         // Hide arrow over selected character
@@ -92,6 +93,7 @@ public class CharacterManager : MonoBehaviour {
         selectedSight.setActive(false);
     }
 
+    // Hides all arrows and locks all characters' moves
     void hideAllArrows()
     {
         // Hide all arrows

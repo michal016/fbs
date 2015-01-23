@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour {
         level3 = FindObjectOfType<Level3>();
 	}
 
+    // Invokes computer turn
     public void computerTurn(int turn)
     {
         if (inLevel == 1)
@@ -34,16 +35,19 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
+    // Invokes the first turn
     private void computerTurnLevel1(int turn)
     {
         level1.move(turn);
     }
 
+    // Invokes the second turn
     private void computerTurnLevel2(int turn)
     {
         level2.move(turn);
     }
 
+    // Invokes the third turn
     private void computerTurnLevel3(int turn)
     {
         level3.move(turn);

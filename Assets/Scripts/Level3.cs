@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Class used to make computer moves in the third level
 public class Level3 : MonoBehaviour {
-
 
     public AudioClip inDestroySound;
     public AudioClip inKillSound;
@@ -32,7 +32,7 @@ public class Level3 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        // Make move
         if (movement)
         {
             Vector3 position = transform.position;
@@ -56,6 +56,7 @@ public class Level3 : MonoBehaviour {
             }
         }
 
+        // Open the gate
         if (openingGate)
         {
             if (!gate.isOpening())
@@ -69,6 +70,7 @@ public class Level3 : MonoBehaviour {
             }
         }
 
+        // Close the gate
         if (closingGate)
         {
             if (!gate.isClosing())
@@ -80,10 +82,12 @@ public class Level3 : MonoBehaviour {
         }
     }
 
+    // Start computer move
     public void move(int turn)
     {
         if (isAlive)
         {
+            // start move
             if (turn < 5)
             {
                 animator.SetInteger("state", 1);
@@ -93,6 +97,7 @@ public class Level3 : MonoBehaviour {
                 //turnManager.startPlayerTurn();
             }
 
+            // Start crusader's bloody walk
             if (turn >= 5)
             {
                 stopFrame = 1000;
@@ -121,22 +126,25 @@ public class Level3 : MonoBehaviour {
 
     IEnumerator OnCollisionEnter2D(Collision2D collision)
     {
+        // When crusader collides with player - kill player
         if (collision.gameObject.tag == "Player")
         {
             audioSource.Stop();
             movement = false;
 
-
+            // Animation start
             animator.SetInteger("state", 2);
             Invoke("gameOver", 1.0f);
 
             yield return new WaitForSeconds(0.4f);
 
+            // Animation end
             animator.SetInteger("state", 0);
             collision.collider.GetComponent<Animator>().SetInteger("state", 4);
             AudioSource catapultAudioSource = collision.collider.GetComponent<AudioSource>();
 
 
+            // Change sound depending on the collider
             if (collision.gameObject.name == "catapult")
             {
                 catapultAudioSource.clip = inDestroySound;
@@ -145,11 +153,13 @@ public class Level3 : MonoBehaviour {
             {
                 catapultAudioSource.clip = inKillSound;
             }
+            // Play sound
             catapultAudioSource.Play();
             collision.collider.GetComponent<BoxCollider2D>().size = new Vector2(1.19f, 0.4f);
         }
     }
 
+    // Call game over
     private void gameOver()
     {
         turnManager.gameOver();

@@ -16,14 +16,17 @@ public class BrokenDeck : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // Detect collision with wheel
         if (collision.gameObject.tag == "wheel")
         {
             if (isActive)
             {
                 isActive = false;
+
                 // Play destroy sound
                 audioSource.Play();
 
+                // Wheel destroy animation
                 collision.gameObject.GetComponent<Animator>().SetInteger("state", 1);
 
                 // Player wins

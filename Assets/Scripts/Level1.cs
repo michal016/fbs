@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Class used to make computer moves in first level
 public class Level1 : MonoBehaviour {
 
     private Animator animator;
     private AudioSource audioSource;
-
     public bool isAlive = true;
     private bool movement = false;
     private int movementFrame = 0;
@@ -22,6 +22,7 @@ public class Level1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        // If computer is moving
         if (movement)
         {
             Vector3 position = transform.position;
@@ -34,7 +35,7 @@ public class Level1 : MonoBehaviour {
             }
             else
             {
-                // End movement
+                // End movement 
                 animator.SetInteger("state", 0);
                 audioSource.Stop();
                 movementFrame = 0;
@@ -46,8 +47,10 @@ public class Level1 : MonoBehaviour {
         }
 	}
 
+    // Start computer move
     public void move(int turn)
     {
+        // In 5. turn - close deck and game is over
         if (turn == 5)
         {
             Deck deck = (Deck)FindObjectOfType<Deck>();
@@ -58,6 +61,7 @@ public class Level1 : MonoBehaviour {
             }
         }
 
+        // Chcecks if character is alive
         if (isAlive)
         {
             animator.SetInteger("state", 1);
@@ -71,10 +75,13 @@ public class Level1 : MonoBehaviour {
         }
     }
 
+    // Checks if character achiewed end of path
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // Game over
         if (collision.gameObject.tag == "gameOver")
         {
+            // Close the deck
             Deck deck = (Deck)FindObjectOfType<Deck>();
             deck.close();
 
@@ -83,11 +90,13 @@ public class Level1 : MonoBehaviour {
         }
     }
 
+    // Kill this character
     public void kill()
     {
         this.isAlive = false;
     }
 
+    // Checks if it is alive
     public bool getAlive()
     {
         return isAlive;

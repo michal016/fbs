@@ -15,6 +15,8 @@ public class Deck : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+
+        // If closing the deck
         if (closingDeck)
         {
             if (transform.rotation.z > -0.7f)
@@ -23,12 +25,14 @@ public class Deck : MonoBehaviour
             }
             else
             {
+                // After closing - stop sound playing
                 audioSource.Stop();
                 closingDeck = false;
             }
         }
 	}
 
+    // Close the deck
     public void close()
     {
         closingDeck = true;

@@ -5,11 +5,13 @@ public class StrengthIndicator : MonoBehaviour {
 
     private Quaternion rotation;
 
+    // Remember rotation
     void Awake()
     {
         rotation = transform.rotation;
     }
 
+    // Change rotation to the first state
     void LateUpdate()
     {
         transform.rotation = rotation;

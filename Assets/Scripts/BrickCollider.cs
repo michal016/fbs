@@ -15,6 +15,7 @@ public class BrickCollider : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // Detect collision with brick and create brocken deck
         if (collision.collider.tag == "brick")
         {
             DestroyObject(transform.parent.gameObject);

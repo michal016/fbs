@@ -7,20 +7,13 @@ public class GearBox : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // On collision with fireing arrow
         if (collision.gameObject.tag == "fireBullet")
         {
-            //GameObject fire = collision.collider.transform.FindChild("fire").gameObject;
-            //GameObject fire = transform.Find("gearFire").gameObject;
-
-            //ParticleSystem particle = fire.GetComponent<ParticleSystem>();
-
-            //particle.startSize = 3.0f;
-
-
             DestroyObject(collision.collider.GetComponent<Rigidbody2D>());
 
+            // Make fire bigger
             Wheel wheel = FindObjectOfType<Wheel>();
-
             GameObject fire = wheel.transform.FindChild("fire").gameObject;
             ParticleSystem particle = fire.GetComponent<ParticleSystem>();
             particle.startSize = 0.9f;
@@ -29,17 +22,8 @@ public class GearBox : MonoBehaviour {
             particle = fire.GetComponent<ParticleSystem>();
             particle.startSize = 0.5f;
 
+            // Destroy wheel
             wheel.destroy();
         }
     }
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

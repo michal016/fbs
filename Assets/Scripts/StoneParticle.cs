@@ -15,12 +15,12 @@ public class StoneParticle : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // If collides with castle
         if (collision.gameObject.tag == "castle")
         {
             if (isActive)
             {
                 // Play castle_hit sound
-
                 AudioSource castleAudioSource = collision.collider.GetComponent<AudioSource>();
 
                 if (audioSource != null)
@@ -29,25 +29,23 @@ public class StoneParticle : MonoBehaviour {
                     castleAudioSource.Play();
                 }
 
+                // Create Particle object system
                 GameObject newBullet = Instantiate(inStoneParticlePrefab, transform.position, transform.rotation) as GameObject;
-                
                 DestroyObject(gameObject);
-
                 WallDestroy wallDestroy = collision.collider.GetComponent<WallDestroy>();
-                
-                // End user turn
-                //turnManager.startComputerTurn();
-                
+                                
                 if (wallDestroy != null)
                 {
                     wallDestroy.hit();
                 }
             }
         }
+        // If collision with wood
         else if (collision.gameObject.tag == "wood")
         {
             if (isActive)
             {
+                // Creat new particle object system
                 GameObject newBullet = Instantiate(inWoodParticlePrefab, transform.position, transform.rotation) as GameObject;
 
                 // Play castle_hit sound
@@ -55,11 +53,6 @@ public class StoneParticle : MonoBehaviour {
                 audioSource.Play();
             }
         }
-        //else
-        //{
-        //    // End user turn
-        //    turnManager.startComputerTurn();
-        //}
         isActive = false;
     }
 
@@ -67,10 +60,5 @@ public class StoneParticle : MonoBehaviour {
 	void Start () {
         turnManager = FindObjectOfType<TurnManager>();
         audioSource = gameObject.GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

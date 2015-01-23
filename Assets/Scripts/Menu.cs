@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Class used to start other scenes
 public class Menu : MonoBehaviour {
 
     void Start()
@@ -8,6 +9,7 @@ public class Menu : MonoBehaviour {
         Transform tr = transform.Find("Level1");
     }
 
+    // Handle 1st level button click
     public void startLevel1()
     {
         if (GameState.isLevelEnabled(1))
@@ -16,6 +18,7 @@ public class Menu : MonoBehaviour {
         }
     }
 
+    // Handle 2nd level button click
     public void startLevel2()
     {
         if (GameState.isLevelEnabled(2))
@@ -24,6 +27,7 @@ public class Menu : MonoBehaviour {
         }
     }
 
+    // Handle 3rd level button click
     public void startLevel3()
     {
         if (GameState.isLevelEnabled(3))
@@ -32,6 +36,7 @@ public class Menu : MonoBehaviour {
         }
     }
 
+    // Exit the application
     public void quitGame()
     {
         Application.Quit();

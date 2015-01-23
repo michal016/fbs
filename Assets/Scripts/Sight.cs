@@ -15,6 +15,7 @@ public class Sight : MonoBehaviour
     private TurnManager turnManager;
     private CharacterMove characterMove;
 
+    // Set active sight
     public void setActive(bool active)
     {
         isActive = active;
@@ -38,23 +39,19 @@ public class Sight : MonoBehaviour
     {
         if (isActive)
         {
+            // Move sight up
             if (Input.GetKey(KeyCode.UpArrow) == true)
             {
-                //if (transform.rotation.z < 0.45f)
-                {
-                    transform.Rotate(new Vector3(0, 0, 1f));
-                }
+                transform.Rotate(new Vector3(0, 0, 1f));
             }
 
+            // Move sight down
             if (Input.GetKey(KeyCode.DownArrow) == true)
             {
-                //if (transform.rotation.z > 0.0f)
-                {
-                    transform.Rotate(new Vector3(0, 0, -1f));
-                }
+                transform.Rotate(new Vector3(0, 0, -1f));
             }
 
-
+            // Start shot
             if (Input.GetKeyDown(KeyCode.Space) == true)
             {
                 // Start begin to shot animation
@@ -65,13 +62,14 @@ public class Sight : MonoBehaviour
                 strengthIndicator.transform.localScale = new Vector3(0f, 0.15f, 0.15f);
             }
 
+            // Calculating shot strength
             if (thrownig)
             {
                 forceTime++;
                 strengthIndicator.transform.localScale = new Vector3(0.15f * forceTime / 101f, 0.15f, 0.15f);
             }
 
-
+            // Throw the bullet
             if (thrownig && Input.GetKeyUp(KeyCode.Space) == true)
             {
                 if (forceTime > 0)
@@ -84,6 +82,7 @@ public class Sight : MonoBehaviour
 
             }
 
+            // Automatic shot
             if (forceTime > 100)
             {
                 Throw(forceTime);
@@ -94,6 +93,7 @@ public class Sight : MonoBehaviour
         }
     }
 
+    // Start shot
     void Throw(int time)
     {
         // Start shot animation
@@ -123,6 +123,7 @@ public class Sight : MonoBehaviour
         GameObject newBullet = Instantiate(inBulletPrefab, pos, rotation) as GameObject;
         Rigidbody2D bulletRB = newBullet.GetComponent<Rigidbody2D>();
 
+        // Add force and torque
         bulletRB.AddTorque(torque);
         bulletRB.AddForce(force * inBulletForce * time);
 
